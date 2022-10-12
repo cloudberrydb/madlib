@@ -1080,7 +1080,7 @@ name                      |
 description               | 
 start_training_time       | 2021-02-05 00:40:42.695613
 end_training_time         | 2021-02-05 00:42:20.796712
-madlib_version            | 1.21.0-dev
+madlib_version            | 1.21.0
 num_classes               | {1}
 class_text_class_values   | {Iris-setosa,Iris-versicolor,Iris-virginica}
 dependent_vartype         | {"character varying"}
@@ -1245,7 +1245,7 @@ name                      | Sophie L.
 description               | Model selection for iris dataset
 start_training_time       | 2021-02-05 01:03:11.337798
 end_training_time         | 2021-02-05 01:05:14.988912
-madlib_version            | 1.21.0-dev
+madlib_version            | 1.21.0
 num_classes               | {1}
 class_text_class_values   | {Iris-setosa,Iris-versicolor,Iris-virginica}
 dependent_vartype         | {"character varying"}
@@ -1419,7 +1419,7 @@ name                      | Sophie L.
 description               | Simple MLP for iris dataset
 start_training_time       | 2021-02-05 01:17:19.432839
 end_training_time         | 2021-02-05 01:18:09.062384
-madlib_version            | 1.21.0-dev
+madlib_version            | 1.21.0
 num_classes               | {1}
 class_text_class_values   | {Iris-setosa,Iris-versicolor,Iris-virginica}
 dependent_vartype         | {"character varying"}
@@ -1543,7 +1543,7 @@ CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.madlib_keras_fit_multiple_model(
             with MinWarning("warning"):
                 fit_obj = madlib_keras_fit_multiple_model.FitMultipleModel(**globals())
                 fit_obj.fit_multiple_model()
-$$ LANGUAGE plpythonu VOLATILE
+$$ LANGUAGE plpython3u VOLATILE
 m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `MODIFIES SQL DATA', `');
 
 CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.madlib_keras_fit_multiple_model(
@@ -1646,5 +1646,5 @@ PythonFunctionBodyOnlyNoSchema(`deep_learning', `madlib_keras')
         message = e.message + 'UDFDetail' + detail
         e.args = (message,)
         raise e
-$$ LANGUAGE plpythonu
+$$ LANGUAGE plpython3u
 m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `NO SQL', `');

@@ -153,17 +153,17 @@ def xgboost_train(schema_madlib, dframe, features_all, class_label, params,
     total_samples = sum(sample_representation)
     sample_weights = None
     if not class_weights:
-        sample_weights = map(
+        sample_weights = list(map(
                 lambda s: total_samples*1.0/sample_representation[s]
                                 /
-                sum([total_samples*1.0/sample_representation[c] for c in sample_representation.keys()])
+                sum([total_samples*1.0/sample_representation[c] for c in sample_representation.keys()]))
                 ,
                 y_train
             )
     else:
         #User-supplied class-weights
         class_weights_dict = ast.literal_eval(re.sub("[\\t]","",class_weights).strip())
-        sample_weights = map(lambda s: class_weights_dict[s], y_train)
+        sample_weights = list(map(lambda s: class_weights_dict[s], y_train))
 
     #Train gradient boosted trees
     p_list = [p.split('=') for p in ast.literal_eval(re.sub("[\\t]","",params).strip())]

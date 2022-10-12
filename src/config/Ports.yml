@@ -7,5 +7,5 @@
 postgres:
     name:   PostgreSQL
 
-greenplum:
-    name:   Greenplum DB
+cloudberry:
+    name:   Cloudberry DB

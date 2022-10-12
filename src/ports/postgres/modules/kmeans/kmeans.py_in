@@ -88,13 +88,14 @@ def compute_kmeanspp_seeding(schema_madlib, rel_args, rel_state, rel_source,
 
     if kmeans_validate_expr(schema_madlib, rel_source, expr_point):
         view_name = unique_string('km_view')
-
+        plpy.info("compute_kmeanspp_seeding", locals())
         plpy.execute(""" CREATE TEMP VIEW {view_name} AS
             SELECT {expr_point} AS expr FROM {rel_source}
             """.format(**locals()))
         rel_source = view_name
         expr_point = 'expr'
 
+    plpy.info("compute_kmeanspp_seeding fn_dist_name ")
     fn_dist_name = plpy.execute("SELECT fn_dist_name FROM " + rel_args)[0]['fn_dist_name']
     iterationCtrl = IterationController2D(
         rel_args=rel_args,
@@ -105,8 +106,11 @@ def compute_kmeanspp_seeding(schema_madlib, rel_args, rel_state, rel_source,
         schema_madlib=schema_madlib,  # Identifiers start here
         rel_source=rel_source,
         expr_point=expr_point)
+    plpy.info("compute_kmeanspp_seeding start")
     with iterationCtrl as it:
+        plpy.info("iter start", rel_args)
         fn_dist_str = plpy.execute("SELECT fn_dist as t FROM " + rel_args)[0]['t']
+        plpy.info("iter end")
 
         state_str = """(SELECT _state FROM {rel_state} WHERE _iteration = {iteration})"""
         closest_column_str = "{schema_madlib}._closest_column"
@@ -145,6 +149,9 @@ def compute_kmeanspp_seeding(schema_madlib, rel_args, rel_state, rel_source,
                         'closest_column_str': closest_column_str
                         })
             it.update(update_query)
+        
+        plpy.info("iter all end")
+    plpy.info("return iter is ",iterationCtrl.iteration)
     return iterationCtrl.iteration
 # ------------------------------------------------------------------------------
 

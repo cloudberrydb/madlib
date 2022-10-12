@@ -27,18 +27,18 @@ from itertools import count
 from bisect import bisect
 
 import plpy
-from control import MinWarning
+from .control import MinWarning
 
-from utilities import _assert
-from utilities import strip_end_quotes
-from utilities import split_quoted_delimited_str
-from utilities import extract_keyvalue_params
-from utilities import add_postfix
-from utilities import is_platform_pg
+from .utilities import _assert
+from .utilities import strip_end_quotes
+from .utilities import split_quoted_delimited_str
+from .utilities import extract_keyvalue_params
+from .utilities import add_postfix
+from .utilities import is_platform_pg
 
-from validate_args import input_tbl_valid, output_tbl_valid, is_var_valid
-from validate_args import unquote_ident, quote_ident
-from validate_args import get_expr_type, get_cols_and_types
+from .validate_args import input_tbl_valid, output_tbl_valid, is_var_valid
+from .validate_args import unquote_ident, quote_ident
+from .validate_args import get_expr_type, get_cols_and_types
 
 import math
 

@@ -2,7 +2,7 @@ from collections import Iterable
 import plpy
 import re
 import string
-from types import StringTypes
+from builtins import str
 
 # Postgresql naming restrictions
 """
@@ -341,7 +341,7 @@ def get_expr_type(expressions, tbl):
     # FIXME: Below transformation exist to ensure backwards compatibility
     # Remove this when all callers have been modified to pass an Iterable
     # 'expressions'
-    if (isinstance(expressions, StringTypes) or
+    if (isinstance(expressions, str) or
             not isinstance(expressions, Iterable)):
         expressions = [expressions]
         input_was_scalar = True
@@ -382,7 +382,7 @@ def columns_exist_in_table(tbl, cols, schema_madlib="madlib"):
     """
     existing_cols = set(unquote_ident(i) for i in get_cols(tbl))
 
-    if isinstance(cols, StringTypes):
+    if isinstance(cols, str):
         cols = [cols]
 
     for col in cols:

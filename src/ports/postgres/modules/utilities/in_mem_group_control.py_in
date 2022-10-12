@@ -6,8 +6,8 @@
 
 import plpy
 import math
-from control import MinWarning
-from utilities import unique_string
+from .control import MinWarning
+from .utilities import unique_string
 from collections import namedtuple
 from collections import Iterable
 
@@ -34,7 +34,7 @@ class BaseState(object):
 
     @property
     def keys(self):
-        return self._state.keys()
+        return list(self._state.keys())
 
     @property
     def values(self):
@@ -139,7 +139,7 @@ class BaseState(object):
     def is_none(self):
         if self._is_none is None:
             self._is_none = True
-            for k, v in self._state.iteritems():
+            for k, v in self._state.items():
                 if v is not None:
                     self._is_none = False
                     break
@@ -175,7 +175,7 @@ class Bytea8State(BaseState):
 
     @property
     def values(self):
-        return self._state.values()
+        return list(self._state.values())
 
 
 def state_factory(is_bytea8, **kwargs):
@@ -334,7 +334,7 @@ class GroupIterationController:
                                        col_grp_state='',
                                        ret_states=ret_states)
             for s in ret_states:
-                self.grp_to_n_tuples[s[col_grp_key]] = long(s[col_n_tuples])
+                self.grp_to_n_tuples[s[col_grp_key]] = int(s[col_n_tuples])
 
         self.in_with = True
         return self
@@ -350,7 +350,7 @@ class GroupIterationController:
         schema_madlib = self.kwargs['schema_madlib']
         res = self.new_states.interpret(schema_madlib,
                                         group_param.grouped_state_type)
-        for grp, t in res.iteritems():
+        for grp, t in res.items():
             loss, normg = t['loss'], t['norm_of_gradient']
             iteration = self.iteration
             output_str = "DEBUG: \
@@ -391,16 +391,16 @@ class GroupIterationController:
         insert_plan = plpy.prepare(insert_sql,
                                    ["text[]", group_param.grouped_state_type,
                                     "text[]", "bigint[]"])
-        plpy.execute(insert_plan, [self.finished_states.keys,
-                                   self.finished_states.values,
-                                   self.grp_to_n_tuples.keys(),
-                                   self.grp_to_n_tuples.values()])
+        plpy.execute(insert_plan, [list(self.finished_states.keys),
+                                   list(self.finished_states.values),
+                                   list(self.grp_to_n_tuples.keys()),
+                                   list(self.grp_to_n_tuples.values())])
         if self.failed_grp_keys:
             plpy.execute(insert_plan,
-                         [self.failed_grp_keys,
+                         [list(self.failed_grp_keys),
                           [],
-                          self.grp_to_n_tuples.keys(),
-                          self.grp_to_n_tuples.values()])
+                          list(self.grp_to_n_tuples.keys()),
+                          list(self.grp_to_n_tuples.values())])
 
     def __exit__(self, type, value, tb):
         self.in_with = False
@@ -520,8 +520,8 @@ class GroupIterationController:
         res = plpy.execute(eval_plan,
                            [self.old_states.keys,
                             self.old_states.values,
-                            self.new_states.keys,
-                            self.new_states.values])
+                            list(self.new_states.keys),
+                            list(self.new_states.values)])
 
         col_grp_key = self.kwargs['col_grp_key']
         finished_keys = [t[col_grp_key] for t in res if t['_expression']]
@@ -582,10 +582,10 @@ class GroupIterationController:
                                         "text[]", "integer[]"])
 
         res_tuples = plpy.execute(self.update_plan,
-                                    [self.new_states.keys,
-                                     self.new_states.values,
-                                     self.grp_to_n_tuples.keys(),
-                                     self.grp_to_n_tuples.values()])
+                                    [list(self.new_states.keys),
+                                     list(self.new_states.values),
+                                     list(self.grp_to_n_tuples.keys()),
+                                     list(self.grp_to_n_tuples.values())])
         res_tuples[0][self.kwargs['col_grp_iteration']] = self.iteration
         col_grp_state = self.kwargs['col_grp_state']
         col_grp_key = self.kwargs['col_grp_key']

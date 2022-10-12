@@ -7,18 +7,22 @@ import random
 from distutils.util import strtobool
 # import numpy as np
 
-from validate_args import _get_table_schema_names
-from validate_args import cols_in_tbl_valid
-from validate_args import does_exclude_reserved
-from validate_args import explicit_bool_to_text
-from validate_args import get_cols
-from validate_args import get_first_schema
-from validate_args import input_tbl_valid
-from validate_args import is_var_valid
-from validate_args import output_tbl_valid
-from validate_args import quote_ident
-from validate_args import unquote_ident
-from validate_args import drop_tables
+import sys
+import os
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+from .validate_args import _get_table_schema_names
+from .validate_args import cols_in_tbl_valid
+from .validate_args import does_exclude_reserved
+from .validate_args import explicit_bool_to_text
+from .validate_args import get_cols
+from .validate_args import get_first_schema
+from .validate_args import input_tbl_valid
+from .validate_args import is_var_valid
+from .validate_args import output_tbl_valid
+from .validate_args import quote_ident
+from .validate_args import unquote_ident
+from .validate_args import drop_tables
 import plpy
 
 m4_changequote(`<!', `!>')
@@ -369,7 +373,7 @@ def _string_to_array_with_quotes(s):
 
 def get_col_name_type_sql_string(colnames, coltypes):
     if colnames and coltypes and len(colnames)==len(coltypes):
-        return ','.join(map(' '.join, zip(colnames, coltypes)))
+        return ','.join(list(map(' '.join, zip(colnames, coltypes))))
     return None
 # ------------------------------------------------------------------------
 
@@ -410,7 +414,7 @@ def py_list_to_sql_string(array, array_type=None, long_format=None):
         # string without escaping
         array_str = "ARRAY[ {val} ]" if long_format else "{qd}{{ {val} }}{qd}"
         return (array_str + "::{array_type}").format(
-            val=','.join(map(str, array)),
+            val=','.join(list(map(str, array))),
             array_type=array_type,
             qd=quote_delimiter)
 # ------------------------------------------------------------------------
@@ -551,7 +555,7 @@ def _array_to_string(origin):
     """
     def _escape(s):
         return re.sub(r'"', r'\"', str(s))
-    return "{" + ",".join(map(_escape, origin)) + "}"
+    return "{" + ",".join(list(map(_escape, origin))) + "}"
 # ------------------------------------------------------------------------
 
 
@@ -593,7 +597,7 @@ def set_client_min_messages(new_level):
 
 def is_pg_major_version_less_than(schema_madlib, compare_version, **kwargs):
     version = plpy.execute("select version()")[0]["version"]
-    regex = re.compile('PostgreSQL\s*([0-9]+)([0-9.beta]+)', re.IGNORECASE)
+    regex = re.compile('PostgreSQL\s*([0-9]+).([0-9.beta]+)', re.IGNORECASE)
     version = regex.findall(version)
     if len(version) > 0 and int(version[0][0]) < compare_version:
         return True
@@ -606,17 +610,18 @@ class __mad_version:
         self.version = plpy.execute("select version()")[0]["version"]
 
     def select_vecfunc(self):
-        """
-        PG84 and GP40, GP41 do not have a good support for
-        vectors. They convert any vector into a string, surrounded
-        by { and }. Thus special care is needed for these older
-        versions of GPDB and PG.
-        """
-        # GPDB 4.0 or 4.1
-        if self.is_less_than_gp42() or self.is_less_than_pg90():
-            return self.__extract
-        else:
-            return self.__identity
+        # """
+        # PG84 and GP40, GP41 do not have a good support for
+        # vectors. They convert any vector into a string, surrounded
+        # by { and }. Thus special care is needed for these older
+        # versions of GPDB and PG.
+        # """
+        # # GPDB 4.0 or 4.1
+        # if self.is_less_than_gp42() or self.is_less_than_pg90():
+        #     return self.__extract
+        # else:
+        #     return self.__identity
+        return self.__identity
 
     def __extract(self, origin, text=True):
         """
@@ -652,14 +657,15 @@ class __mad_version:
         return _array_to_string(origin)
 
     def select_array_agg(self, schema_madlib):
-        """
-        GPDB < 4.1 and PG < 9.0 do not have support for array_agg,
-        so use the madlib array_agg for those versions
-        """
-        if self.is_less_than_gp41() or self.is_less_than_pg90():
-            return "{schema_madlib}.array_agg".format(schema_madlib=schema_madlib)
-        else:
-            return "array_agg"
+        #"""
+        #GPDB < 4.1 and PG < 9.0 do not have support for array_agg,
+        #so use the madlib array_agg for those versions
+        #"""
+        #if self.is_less_than_gp41() or self.is_less_than_pg90():
+        #    return "{schema_madlib}.array_agg".format(schema_madlib=schema_madlib)
+        #else:
+        #    return "array_agg"
+        return "array_agg"
 
     def is_pg(self):
         if (re.search(r"PostgreSQL", self.version) and

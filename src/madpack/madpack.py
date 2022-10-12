@@ -23,14 +23,20 @@ from utilities import info_
 from utilities import is_rev_gte
 from utilities import remove_comments_from_sql
 from utilities import run_query
+
+try:
+    raw_input 
+except NameError:
+    raw_input = input
+
 # Required Python version
 py_min_ver = [2, 6]
 
 # Check python version
 if sys.version_info[:2] < py_min_ver:
     print("ERROR: python version too old ({0}). You need {1} or greater.".
-          format('.'.join(map(str, sys.version_info[:3])),
-                 '.'.join(map(str, py_min_ver))))
+          format('.'.join(list(map(str, sys.version_info[:3]))),
+                 '.'.join(list(map(str, py_min_ver)))))
     exit(1)
 
 # Find MADlib root directory. This file is installed to
@@ -59,7 +65,7 @@ portid_list = []
 for port in ports:
     portid_list.append(port)
 
-SUPPORTED_PORTS = ('postgres', 'greenplum')
+SUPPORTED_PORTS = ('postgres', 'cloudberry')
 
 # Global variables
 portid = None       # Target port ID (eg: pg90, gp40)
@@ -82,7 +88,7 @@ def _make_dir(dir):
         try:
             os.makedirs(dir)
         except:
-            print "ERROR: can not create directory: %s. Check permissions." % dir
+            print("ERROR: can not create directory: %s. Check permissions." % dir)
             exit(1)
 # ------------------------------------------------------------------------------
 
@@ -125,7 +131,7 @@ def _get_relative_maddir(maddir, port):
     # Check outside $GPHOME if there is a symlink to this absolute path
     # os.pardir is equivalent to ..
     # os.path.normpath removes the extraneous .. from that path
-    rel_gphome = os.path.normpath(os.path.join(abs_gphome, os.pardir, 'greenplum-db'))
+    rel_gphome = os.path.normpath(os.path.join(abs_gphome, os.pardir, 'cloudberry-db'))
     if (os.path.islink(rel_gphome) and
             os.path.realpath(rel_gphome) == os.path.realpath(abs_gphome)):
         # if the relative link exists and is pointing to current location
@@ -328,9 +334,9 @@ def _parse_result_logfile(retval, logfile, sql_abspath,
 
     if is_install_check_logfile:
         # Output result
-        print "TEST CASE RESULT|Module: " + module + \
+        print("TEST CASE RESULT|Module: " + module + \
             "|" + os.path.basename(sql_filename) + "|" + result + \
-            "|Time: %d milliseconds" % (milliseconds)
+            "|Time: %d milliseconds" % (milliseconds))
 
     if result == 'FAIL':
         error_(this, "Failed executing %s" % sql_abspath, stop=False)
@@ -346,13 +352,14 @@ def _check_db_port(portid):
     # Postgres
     try:
         row = _internal_run_query("SELECT version() AS version", True)
+        version = row[0]['version'].lower()
     except:
         error_(this, "Cannot validate DB platform type", True)
-    if row and row[0]['version'].lower().find(portid) >= 0:
+    if row and version.find(portid) >= 0:
         if portid == 'postgres':
-            if row[0]['version'].lower().find('greenplum') < 0:
+            if version.find('cloudberry') < 0:
                 return True
-        elif portid == 'greenplum':
+        elif portid == 'cloudberry':
             return True
     return False
 # ------------------------------------------------------------------------------
@@ -388,16 +395,16 @@ def _plpy_check(py_min_ver):
 
     # Check PL/Python existence
     rv = _internal_run_query("SELECT count(*) AS CNT FROM pg_language "
-                             "WHERE lanname = 'plpythonu'", True)
+                             "WHERE lanname = 'plpython3u'", True)
     if int(rv[0]['cnt']) > 0:
         info_(this, "> PL/Python already installed", verbose)
     else:
         info_(this, "> PL/Python not installed", verbose)
         info_(this, "> Creating language PL/Python...", True)
         try:
-            _internal_run_query("CREATE LANGUAGE plpythonu;", True)
+            _internal_run_query("CREATE LANGUAGE plpython3u;", True)
         except:
-            error_(this, """Cannot create language plpythonu. Please check if you
+            error_(this, """Cannot create language plpython3u. Please check if you
                 have configured and installed portid (your platform) with
                 `--with-python` option. Stopping installation...""", False)
             raise Exception
@@ -412,7 +419,7 @@ def _plpy_check(py_min_ver):
             # return '.'.join(str(item) for item in sys.version_info[:3])
             return str(sys.version_info[:3]).replace(',','.').replace(' ','').replace(')','').replace('(','')
         $$
-        LANGUAGE plpythonu;
+        LANGUAGE plpython3u;
     """, True)
     rv = _internal_run_query("SELECT plpy_version_for_madlib() AS ver;", True)
     python = rv[0]['ver']
@@ -906,7 +913,7 @@ def parse_arguments():
         formatter_class=argparse.RawTextHelpFormatter,
         epilog="""Example:
 
-  $ madpack install -s madlib -p greenplum -c gpadmin@mdw:5432/testdb
+  $ madpack install -s madlib -p cloudberry -c gpadmin@mdw:5432/testdb
 
   This will install MADlib objects into a Greenplum database called TESTDB
   running on server MDW:5432. Installer will try to login as GPADMIN
@@ -946,7 +953,7 @@ def parse_arguments():
         '-c', '--conn', metavar='CONNSTR', nargs=1, dest='connstr', default=None,
         help="""Connection string of the following syntax:
                    [user[/password]@][host][:port][/database]
-                 If not provided default values will be derived for PostgreSQL and Greenplum:
+                 If not provided default values will be derived for PostgreSQL and Cloudberry:
                  - user: PGUSER or USER env variable or OS username
                  - pass: PGPASSWORD env variable or runtime prompt
                  - host: PGHOST env variable or 'localhost'
@@ -1211,7 +1218,7 @@ def create_install_madlib_sqlfile(args, madpack_cmd):
 
 def get_madlib_function_drop_str(schema):
 
-    if portid == 'greenplum':
+    if portid == 'cloudberry':
         case_str = """
         CASE
           WHEN p.proisagg THEN 'aggregate'
@@ -1305,15 +1312,14 @@ def set_dynamic_library_path_in_database(dbver_split, madlib_library_path):
 
     global dynamic_library_path
     dynamic_library_path = _internal_run_query("SHOW dynamic_library_path", True)[0]['dynamic_library_path']
-
+    # new logic
+    #if dynamic_library_path and dynamic_library_path[0] == ":":
+    #    dynamic_library_path = dynamic_library_path[1:]
     if madlib_library_path not in dynamic_library_path.split(":"):
-        dynamic_library_path = dynamic_library_path + ':' + madlib_library_path
+        dynamic_library_path =  madlib_library_path + ":" + dynamic_library_path 
 
-        if portid == 'greenplum':
-            if is_rev_gte(dbver_split, get_rev_num('6.0')):
-                ret = os.system('gpconfig -c dynamic_library_path -v \'{0}\''.format(dynamic_library_path))
-            else:
-                ret = os.system('gpconfig -c dynamic_library_path -v \'\\{0}\''.format(dynamic_library_path))
+        if portid == 'cloudberry':
+            ret = os.system('gpconfig -c dynamic_library_path -v \'{0}\''.format(dynamic_library_path))
             ret = ret + os.system('gpstop -u')
             if ret != 0:
                 error_(this, "cannot run gpconfig or gpstop", True)
@@ -1338,7 +1344,7 @@ def main(argv):
     global tmpdir
     try:
         tmpdir = tempfile.mkdtemp('', 'madlib.', args.tmpdir)
-    except OSError, e:
+    except OSError as e:
         tmpdir = e.filename
         error_(this, "cannot create temporary directory: '%s'." % tmpdir, True)
 
@@ -1413,33 +1419,17 @@ def main(argv):
         supportedVersions = [dirItem for dirItem in os.listdir(portdir)
                              if os.path.isdir(os.path.join(portdir, dirItem)) and
                              re.match("^\d+", dirItem)]
+        dbver_split = []
         if dbver is None:
             dbver = ".".join(
-                map(str, max([versionStr.split('.')
-                              for versionStr in supportedVersions])))
-            info_(this, "Could not parse version string reported by {DBMS}. Will "
-                  "default to newest supported version of {DBMS} "
-                  "({version}).".format(DBMS=ports[portid]['name'],
-                                        version=dbver), True)
+                list(map(str, max([versionStr.split('.')
+                              for versionStr in supportedVersions]))))
         else:
             info_(this, "Detected %s version %s." % (ports[portid]['name'], dbver),
                   True)
-
             dbver_split = get_rev_num(dbver)
-            if portid == 'greenplum':
-                if is_rev_gte(dbver_split, get_rev_num('5.0')):
-                    # GPDB (starting 5.0) uses semantic versioning. Hence, only
-                    # need first digit for major version.
-                    dbver = str(dbver_split[0])
-                elif is_rev_gte(dbver_split, get_rev_num('4.3.5')):
-                    # Due to the ABI incompatibility between 4.3.4 and 4.3.5,
-                    # MADlib treats 4.3.5+ as DB version 4.3ORCA which is
-                    # different from 4.3. The name is suffixed with ORCA since
-                    # optimizer (ORCA) is 'on' by default in 4.3.5+
-                    dbver = '4.3ORCA'
-                else:
-                    # only need the first two digits for <= 4.3.4
-                    dbver = '.'.join(map(str, dbver_split[:2]))
+            if portid == 'cloudberry':
+                dbver = '.'.join(list(map(str, dbver_split[:2])))
             elif portid == 'postgres':
                 if is_rev_gte(dbver_split, get_rev_num('10.0')):
                     # Postgres starting 10.0 uses semantic versioning. Hence,
@@ -1472,10 +1462,6 @@ def main(argv):
         con_args = None
         db_madlib_ver = None
 
-    # Parse COMMAND argument and compare with Ports.yml
-    # Debugging...
-    # print "OS new_madlib_ver: " + str(new_madlib_ver) + " > " + str(get_rev_num(new_madlib_ver))
-    # print "DB new_madlib_ver: " + str(db_madlib_ver) + " > " + str(get_rev_num(db_madlib_ver))
 
     # Make sure we have the necessary parameters to continue
     if args.command[0] != 'version':
@@ -1541,4 +1527,4 @@ if __name__ == "__main__":
     if not keeplogs:
         shutil.rmtree(tmpdir)
     else:
-        print "INFO: Log files saved in " + tmpdir
+        print("INFO: Log files saved in " + tmpdir)

@@ -2,4 +2,4 @@ default_version = '@MADLIB_VERSION_MAJOR@.@MADLIB_VERSION_MINOR@.@MADLIB_VERSION
 comment = 'A scalable in-database analytics library'
 relocatable = false
 module_pathname = 'libmadlib.so'
-requires = 'plpythonu'
+requires = 'plpython3u'

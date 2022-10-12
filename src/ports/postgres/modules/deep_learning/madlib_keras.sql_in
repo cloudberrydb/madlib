@@ -1143,7 +1143,7 @@ model_size                | 0.7900390625
 start_training_time       | 2021-02-01 15:58:43.760568
 end_training_time         | 2021-02-01 15:58:44.470054
 metrics_elapsed_time      | {0.709463119506836}
-madlib_version            | 1.21.0-dev
+madlib_version            | 1.21.0
 num_classes               | {3}
 dependent_vartype         | {"character varying"}
 normalizing_const         | 1
@@ -1457,7 +1457,7 @@ model_size                | 0.7900390625
 start_training_time       | 2021-01-29 14:41:16.943861
 end_training_time         | 2021-01-29 14:41:19.478149
 metrics_elapsed_time      | {2.3377411365509,2.42358803749084,2.49885511398315,2.53427410125732}
-madlib_version            | 1.21.0-dev
+madlib_version            | 1.21.0
 num_classes               | {3}
 dependent_vartype         | {"character varying"}
 normalizing_const         | 1
@@ -1627,7 +1627,7 @@ model_size                | 0.7900390625
 start_training_time       | 2021-01-29 14:42:28.780276
 end_training_time         | 2021-01-29 14:42:31.177561
 metrics_elapsed_time      | {2.24628114700317,2.28473520278931,2.32178020477295,2.35844302177429,2.39726710319519}
-madlib_version            | 1.21.0-dev
+madlib_version            | 1.21.0
 num_classes               | {3}
 dependent_vartype         | {"character varying"}
 normalizing_const         | 1
@@ -1742,7 +1742,7 @@ model_size                | 0.7900390625
 start_training_time       | 2021-01-29 14:44:51.176983
 end_training_time         | 2021-01-29 14:44:53.666457
 metrics_elapsed_time      | {2.48945999145508}
-madlib_version            | 1.21.0-dev
+madlib_version            | 1.21.0
 num_classes               | {3}
 dependent_vartype         | {"character varying"}
 normalizing_const         | 1
@@ -1847,7 +1847,7 @@ CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.madlib_keras_fit(
     with AOControl(False):
         with SetGUC("plan_cache_mode", "force_generic_plan"):
             madlib_keras.fit(**globals())
-$$ LANGUAGE plpythonu VOLATILE
+$$ LANGUAGE plpython3u VOLATILE
 m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `MODIFIES SQL DATA', `');
 
 CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.fit_transition(
@@ -1880,7 +1880,7 @@ PythonFunctionBodyOnlyNoSchema(`deep_learning', `madlib_keras')
         message = e.message + 'TransAggDetail' + detail
         e.args = (message,)
         raise e
-$$ LANGUAGE plpythonu
+$$ LANGUAGE plpython3u
 m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `NO SQL', `');
 
 
@@ -1922,7 +1922,7 @@ PythonFunctionBodyOnlyNoSchema(`deep_learning', `madlib_keras')
         message = e.message + 'TransAggDetail' + detail
         e.args = (message,)
         raise e
-$$ LANGUAGE plpythonu
+$$ LANGUAGE plpython3u
 m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `NO SQL', `');
 
 CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.fit_merge(
@@ -1942,7 +1942,7 @@ PythonFunctionBodyOnlyNoSchema(`deep_learning', `madlib_keras')
         message = e.message + 'MergeAggDetail' + detail
         e.args = (message,)
         raise e
-$$ LANGUAGE plpythonu
+$$ LANGUAGE plpython3u
 m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `NO SQL', `');
 
 CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.fit_final(
@@ -1961,7 +1961,7 @@ PythonFunctionBodyOnlyNoSchema(`deep_learning', `madlib_keras')
         e.args = (message,)
         raise e
 
-$$ LANGUAGE plpythonu
+$$ LANGUAGE plpython3u
 m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `NO SQL', `');
 
 DROP AGGREGATE IF EXISTS MADLIB_SCHEMA.fit_step(
@@ -2080,7 +2080,7 @@ CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.madlib_keras_predict(
                    pred_type,
                    use_gpus,
                    mst_key)
-$$ LANGUAGE plpythonu VOLATILE
+$$ LANGUAGE plpython3u VOLATILE
 m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `MODIFIES SQL DATA', `');
 
 CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.madlib_keras_predict(
@@ -2106,7 +2106,7 @@ CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.madlib_keras_predict(
                    pred_type,
                    use_gpus,
                    mst_key)
-$$ LANGUAGE plpythonu VOLATILE
+$$ LANGUAGE plpython3u VOLATILE
 m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `MODIFIES SQL DATA', `');
 
 CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.madlib_keras_predict(
@@ -2132,7 +2132,7 @@ CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.madlib_keras_predict(
                    pred_type,
                    use_gpus,
                    mst_key)
-$$ LANGUAGE plpythonu VOLATILE
+$$ LANGUAGE plpython3u VOLATILE
 m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `MODIFIES SQL DATA', `');
 
 CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.internal_keras_predict(
@@ -2152,7 +2152,7 @@ CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.internal_keras_predict(
 ) RETURNS DOUBLE PRECISION[] AS $$
     PythonFunctionBodyOnlyNoSchema(`deep_learning', `madlib_keras_predict')
     return madlib_keras_predict.internal_keras_predict_wide(**globals())
-$$ LANGUAGE plpythonu VOLATILE
+$$ LANGUAGE plpython3u VOLATILE
 m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `MODIFIES SQL DATA', `');
 
 -------------------------------------------------------------------------------
@@ -2174,7 +2174,7 @@ CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.madlib_keras_predict_byom(
     with AOControl(False):
         with SetGUC("plan_cache_mode", "force_generic_plan"):
             madlib_keras_predict.PredictBYOM(**globals())
-$$ LANGUAGE plpythonu VOLATILE
+$$ LANGUAGE plpython3u VOLATILE
 m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `MODIFIES SQL DATA', `');
 
 CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.madlib_keras_predict_byom(
@@ -2194,7 +2194,7 @@ CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.madlib_keras_predict_byom(
     with AOControl(False):
         with SetGUC("plan_cache_mode", "force_generic_plan"):
             madlib_keras_predict.PredictBYOM(**globals())
-$$ LANGUAGE plpythonu VOLATILE
+$$ LANGUAGE plpython3u VOLATILE
 m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `MODIFIES SQL DATA', `');
 
 CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.madlib_keras_predict_byom(
@@ -2214,7 +2214,7 @@ CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.madlib_keras_predict_byom(
     with AOControl(False):
         with SetGUC("plan_cache_mode", "force_generic_plan"):
             madlib_keras_predict.PredictBYOM(**globals())
-$$ LANGUAGE plpythonu VOLATILE
+$$ LANGUAGE plpython3u VOLATILE
 m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `MODIFIES SQL DATA', `');
 -------------------------------------------------------------------------------
 CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.madlib_keras_evaluate(
@@ -2229,7 +2229,7 @@ CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.madlib_keras_evaluate(
     with AOControl(False):
         with SetGUC("plan_cache_mode", "force_generic_plan"):
             madlib_keras.evaluate(**globals())
-$$ LANGUAGE plpythonu VOLATILE
+$$ LANGUAGE plpython3u VOLATILE
 m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `MODIFIES SQL DATA', `');
 
 CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.madlib_keras_evaluate(
@@ -2271,7 +2271,7 @@ CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.internal_keras_eval_transition(
 ) RETURNS REAL[] AS $$
 PythonFunctionBodyOnlyNoSchema(`deep_learning', `madlib_keras')
     return madlib_keras.internal_keras_eval_transition(**globals())
-$$ LANGUAGE plpythonu
+$$ LANGUAGE plpython3u
 m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `NO SQL', `');
 
 CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.internal_keras_eval_merge(
@@ -2280,7 +2280,7 @@ CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.internal_keras_eval_merge(
 ) RETURNS REAL[] AS $$
 PythonFunctionBodyOnlyNoSchema(`deep_learning', `madlib_keras')
     return madlib_keras.internal_keras_eval_merge(**globals())
-$$ LANGUAGE plpythonu
+$$ LANGUAGE plpython3u
 m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `NO SQL', `');
 
 CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.internal_keras_eval_final(
@@ -2288,7 +2288,7 @@ CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.internal_keras_eval_final(
 ) RETURNS REAL[2] AS $$
 PythonFunctionBodyOnlyNoSchema(`deep_learning', `madlib_keras')
     return madlib_keras.internal_keras_eval_final(**globals())
-$$ LANGUAGE plpythonu
+$$ LANGUAGE plpython3u
 m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `NO SQL', `');
 
 DROP AGGREGATE IF EXISTS MADLIB_SCHEMA.internal_keras_evaluate(
@@ -2339,7 +2339,7 @@ CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.madlib_keras_fit(
     PythonFunctionBodyOnly(`deep_learning', `madlib_keras')
     with AOControl(False):
         return madlib_keras.fit_help(**globals())
-$$ LANGUAGE plpythonu IMMUTABLE
+$$ LANGUAGE plpython3u IMMUTABLE
 m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `CONTAINS SQL', `');
 
 CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.madlib_keras_fit()
@@ -2354,7 +2354,7 @@ CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.madlib_keras_evaluate(
     PythonFunctionBodyOnly(`deep_learning', `madlib_keras')
     with AOControl(False):
         return madlib_keras.evaluate_help(**globals())
-$$ LANGUAGE plpythonu IMMUTABLE
+$$ LANGUAGE plpython3u IMMUTABLE
 m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `CONTAINS SQL', `');
 
 CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.madlib_keras_evaluate()
@@ -2369,7 +2369,7 @@ CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.madlib_keras_predict(
     PythonFunctionBodyOnly(`deep_learning', `madlib_keras_predict')
     with AOControl(False):
         return madlib_keras_predict.predict_help(**globals())
-$$ LANGUAGE plpythonu IMMUTABLE
+$$ LANGUAGE plpython3u IMMUTABLE
 m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `CONTAINS SQL', `');
 
 CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.madlib_keras_predict()
@@ -2384,7 +2384,7 @@ CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.madlib_keras_predict_byom(
     PythonFunctionBodyOnly(`deep_learning', `madlib_keras_predict')
     with AOControl(False):
         return madlib_keras_predict.predict_byom_help(**globals())
-$$ LANGUAGE plpythonu IMMUTABLE
+$$ LANGUAGE plpython3u IMMUTABLE
 m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `CONTAINS SQL', `');
 
 CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.madlib_keras_predict_byom()

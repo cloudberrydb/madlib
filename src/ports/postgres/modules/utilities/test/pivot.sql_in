@@ -152,15 +152,15 @@ SELECT assert(__p_8__ = 1.5,
              'Wrong output in pivoting: Output dictionary') FROM pivout
     WHERE id = 0 AND id2 = 0;
 
-DROP FUNCTION IF EXISTS array_add1(ANYARRAY, ANYELEMENT);
-DROP AGGREGATE IF EXISTS array_accum1 (anyelement);
-CREATE FUNCTION array_add1(ANYARRAY, ANYELEMENT) RETURNS ANYARRAY AS $$
+DROP FUNCTION IF EXISTS array_add1(ANYCOMPATIBLEARRAY, ANYCOMPATIBLE);
+DROP AGGREGATE IF EXISTS array_accum1 (anycompatible);
+CREATE FUNCTION array_add1(ANYCOMPATIBLEARRAY, ANYCOMPATIBLE) RETURNS ANYCOMPATIBLEARRAY AS $$
   SELECT $1 || $2
 $$ LANGUAGE sql STRICT;
 
-CREATE AGGREGATE array_accum1 (anyelement) (
+CREATE AGGREGATE array_accum1 (anycompatible) (
     sfunc = array_add1,
-    stype = anyarray,
+    stype = anycompatiblearray,
     initcond = '{}'
 );
 DROP TABLE IF EXISTS pivout;

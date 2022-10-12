@@ -21,7 +21,10 @@ extern "C" {
     #include <miscadmin.h>         // Memory allocation, e.g., HOLD_INTERRUPTS
     #include <utils/acl.h>
     #include <utils/array.h>
-    #include <utils/builtins.h>    // needed for format_procedure()
+    #include <utils/builtins.h>   // needed for string_to_text()、cstring_to_text_with_len()
+    #include <utils/elog.h>       // needed for errstart_cold
+    #include <utils/regproc.h>    // needed for format_procedure()
+    #include <common/hashfn.h>    // needed for oid_hash
     #include <utils/datum.h>
     #include <utils/lsyscache.h>   // for type lookup, e.g., type_is_rowtype
     #include <utils/memutils.h>
@@ -29,6 +32,9 @@ extern "C" {
     #include <utils/typcache.h>    // type conversion, e.g., lookup_rowtype_tupdesc
     #include "../../../../methods/svec/src/pg_gp/sparse_vector.h" // Legacy sparse vectors
 } // extern "C"
+
+Datum drandom(PG_FUNCTION_ARGS);
+Datum setseed(PG_FUNCTION_ARGS);
 
 #include "Compatibility.hpp"
 

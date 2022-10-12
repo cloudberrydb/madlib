@@ -176,12 +176,13 @@ def get_dbver(con_args, portid):
     """ Read version number from database (of form X.Y) """
     try:
         versionStr = run_query("SELECT pg_catalog.version()", con_args, True)[0]['version']
+        versionStr = versionStr.replace('Cloudberry', 'Greenplum')
         if portid == 'postgres':
             match = re.search("PostgreSQL[a-zA-Z\s]*(\d+\.\d+)", versionStr)
-        elif portid == 'greenplum':
+        elif portid == 'cloudberry':
             # for Greenplum the 3rd digit is necessary to differentiate
             # 4.3.5+ from versions < 4.3.5
-            match = re.search("Greenplum[a-zA-Z\s]*(\d+\.\d+\.\d+)", versionStr)
+            match = re.search("Cloudberry[a-zA-Z\s]*(\d+\.\d+\.\d+)", versionStr)
         return None if match is None else match.group(1)
     except Exception:
         error_(this, "Failed reading database version", True)
@@ -272,7 +273,7 @@ def get_rev_num(rev):
         num += [0] * (3 - len(num))  # normalize num to be of length 3
         # get identifier part of the version string
         if len(rev_parts) > 1:
-            num.extend(map(str, rev_parts[1:]))
+            num.extend(list(map(str, rev_parts[1:])))
         if not num:
             num = [0]
         return num

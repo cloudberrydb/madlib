@@ -284,7 +284,7 @@ class MarginalEffectsBuilder(object):
                 @param list_value: list. List of indices of the basis terms
                                         to include in the subset
         """
-        list_value = map(str, list_value)
+        list_value = list(map(str, list_value))
         if not all(TermBase(i) in self.inverse_basis_terms for i in list_value):
             raise ValueError("Margins Error: Subset basis contains identifier not present in basis term")
         try:
@@ -1223,7 +1223,7 @@ if __name__ == '__main__':
     #     """Convert numeric array to SQL string """
     #     if array:
     #         type_str = "::" + array_type if array_type else ""
-    #         return "ARRAY[{0}]{1}".format(','.join(map(str, array)), type_str)
+    #         return "ARRAY[{0}]{1}".format(','.join(list(map(str, array))), type_str)
     #     else:
     #         if not array_type:
     #             array_type = "double precision[]"

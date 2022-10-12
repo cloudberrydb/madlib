@@ -163,7 +163,7 @@ def generate_train_features(schema_madlib, train_segment_tbl, regex_tbl, label_t
                                                                    ELSE 0
                                                               END] )
                     FROM   """ + tmp1_feature + """, """ + train_featureset_tbl + """ fset
-                    WHERE  """ + tmp1_feature + """.f_name = fset.f_name AND fset.f_name <> 'E.';""")
+                    WHERE  """ + tmp1_feature + """.f_name = fset.f_name AND fset.f_name != 'E.';""")
 
     plpy.execute("""INSERT INTO {sparse_rtbl} (doc_id, f_size, sparse_r)
                     SELECT doc_id, {f_size}, {schema_madlib}.array_union(feature::integer[] order by start_pos)
@@ -344,7 +344,7 @@ def generate_test_features(schema_madlib, test_segment_tbl,
     plpy.execute("""INSERT INTO """ + mtbl + """(prev_label, label, value)
                         SELECT prev_label_id,label_id,weight
                         FROM   """ + crf_weights_tbl + """ AS features
-                        WHERE  features.prev_label_id<>-1 OR features.name = 'S.';""")
+                        WHERE  features.prev_label_id!=(-1) OR features.name = 'S.';""")
 
     # EndFeature, endFeature can be considered as a special edgeFeature
     plpy.execute("""INSERT INTO """ + mtbl + """(prev_label, label, value)

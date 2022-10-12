@@ -658,7 +658,7 @@ CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.balance_sample(
   keep_null          BOOLEAN
 ) RETURNS VOID AS $$
     PythonFunction(sample, balance_sample, balance_sample)
-$$ LANGUAGE plpythonu VOLATILE
+$$ LANGUAGE plpython3u VOLATILE
 m4_ifdef(`\_\_HAS_FUNCTION_PROPERTIES\_\_', `MODIFIES SQL DATA', `');
 
 -------------------------------------------------------------------------------
@@ -725,7 +725,7 @@ CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.balance_sample(
     message VARCHAR
 ) RETURNS VARCHAR AS $$
     PythonFunction(sample, balance_sample, balance_sample_help)
-$$ LANGUAGE plpythonu IMMUTABLE
+$$ LANGUAGE plpython3u IMMUTABLE
 m4_ifdef(`\_\_HAS_FUNCTION_PROPERTIES\_\_', `CONTAINS SQL', `');
 
 -------------------------------------------------------------------------------

@@ -1,21 +1,13 @@
 # Define Greenplum feature macros
 #
-function(define_greenplum_features IN_VERSION OUT_FEATURES)
-    if(NOT ${IN_VERSION} VERSION_LESS "4.1")
-        list(APPEND ${OUT_FEATURES} __HAS_ORDERED_AGGREGATES__)
-    endif()
-
-    if(NOT ${IN_VERSION} VERSION_LESS "4.3")
-        list(APPEND ${OUT_FEATURES} __HAS_FUNCTION_PROPERTIES__)
-    endif()
-
-    if(${IN_VERSION} VERSION_GREATER "4.3")
-        list(APPEND ${OUT_FEATURES} __HAS_BOOL_TO_TEXT_CAST__)
-    endif()
+function(define_cloudberry_features IN_VERSION OUT_FEATURES)
+    list(APPEND ${OUT_FEATURES} __HAS_ORDERED_AGGREGATES__)
+    list(APPEND ${OUT_FEATURES} __HAS_FUNCTION_PROPERTIES__)
+    list(APPEND ${OUT_FEATURES} __HAS_BOOL_TO_TEXT_CAST__)
 
     # Pass values to caller
     set(${OUT_FEATURES} "${${OUT_FEATURES}}" PARENT_SCOPE)
-endfunction(define_greenplum_features)
+endfunction(define_cloudberry_features)
 
 function(add_gppkg GPDB_VERSION GPDB_VARIANT GPDB_VARIANT_SHORT UPGRADE_SUPPORT)
     string(TOLOWER ${GPDB_VERSION} GPDB_VERSION_LC)
@@ -25,6 +17,12 @@ function(add_gppkg GPDB_VERSION GPDB_VARIANT GPDB_VARIANT_SHORT UPGRADE_SUPPORT)
     rh_version(RH_VERSION)
     string(REGEX MATCH "([0-9])" RH_MAJOR_VERSION "${RH_VERSION}")
 
+    if("${OSVER}" STREQUAL "kylin")
+        string(REGEX MATCH "([0-9]+)" RH_MAJOR_VERSION "${RH_VERSION}")
+    endif("${OSVER}" STREQUAL "kylin")
+
+    string(CONCAT OS ${OSVER} ${RH_MAJOR_VERSION})
+   
     file(WRITE "${CMAKE_BINARY_DIR}/deploy/gppkg/${GPDB_VARIANT}_${VERSION_}_gppkg.cmake" "
     file(MAKE_DIRECTORY
         \"\${CMAKE_CURRENT_BINARY_DIR}/${GPDB_VERSION}/BUILD\"
@@ -32,12 +30,13 @@ function(add_gppkg GPDB_VERSION GPDB_VARIANT GPDB_VARIANT_SHORT UPGRADE_SUPPORT)
         \"\${CMAKE_CURRENT_BINARY_DIR}/${GPDB_VERSION}/RPMS\"
         \"\${CMAKE_CURRENT_BINARY_DIR}/${GPDB_VERSION}/gppkg\"
     )
-
+    
     set(GPDB_VERSION \"${GPDB_VERSION}\")
     set(GPDB_VERSION_LC \"${GPDB_VERSION_LC}\")
     set(GPDB_VARIANT \"${GPDB_VARIANT}\")
     set(GPDB_VARIANT_SHORT \"${GPDB_VARIANT_SHORT}\")
     set(UPGRADE_SUPPORT \"${UPGRADE_SUPPORT}\")
+    set(OS \"${OS}\")
     set(RH_MAJOR_VERSION \"${RH_MAJOR_VERSION}\")
     string(TOLOWER \"${GPDB_VARIANT}\" PORT_NAME)
 

@@ -1,6 +1,6 @@
 import plpy
-from elastic_net_utils import _process_results
-from elastic_net_utils import _compute_log_likelihood
+from .elastic_net_utils import _process_results
+from .elastic_net_utils import _compute_log_likelihood
 from utilities.validate_args import get_cols_and_types
 from utilities.validate_args import quote_ident
 from utilities.utilities import split_quoted_delimited_str

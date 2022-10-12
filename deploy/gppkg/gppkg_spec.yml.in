@@ -1,11 +1,11 @@
 Pkgname: madlib
 Architecture: @CPACK_RPM_PACKAGE_ARCHITECTURE@
 Version: @MADLIB_VERSION_STRING_NO_HYPHEN@@GPPKG_VER@-@GPDB_VARIANT_SHORT@@GPDB_VERSION_LC@
-OS: rhel@RH_MAJOR_VERSION@
+OS: @OS@
 GPDBVersion: @GPDB_VERSION_LC@
 Description: Madlib is an open source library which provides scalable in-database analytics. It provides data-parallel implementations of mathematical, statistical and machine learning methods for structured and unstructured data.
 PostInstall:
-- Master: "echo 'Please run the following command to deploy MADlib';
+- Coordinator: "echo 'Please run the following command to deploy MADlib';
            echo 'usage:  madpack install [-s schema_name] -p @PORT_NAME@ -c user@host:port/database';
            echo 'Example:';
            echo '       $ $GPHOME/madlib/bin/madpack install -s madlib -p @PORT_NAME@ -c gpadmin@mdw:5432/testdb';

@@ -266,7 +266,7 @@ File array_ops.sql_in for list of functions and usage.
  * @returns Sum of x and y.
  *
  */
-CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.array_add(x anyarray, y anyarray) RETURNS anyarray
+CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.array_add(x anycompatiblearray, y anycompatiblearray) RETURNS anycompatiblearray
 AS 'MODULE_PATHNAME', 'array_add'
 LANGUAGE C IMMUTABLE
 m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `NO SQL', `');
@@ -278,10 +278,10 @@ m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `NO SQL', `');
  * @returns Sum of x
  *
  */
-DROP AGGREGATE IF EXISTS MADLIB_SCHEMA.sum(/* x */ anyarray) CASCADE;
-CREATE AGGREGATE MADLIB_SCHEMA.sum(/* x */ anyarray) (
+DROP AGGREGATE IF EXISTS MADLIB_SCHEMA.sum(/* x */ anycompatiblearray) CASCADE;
+CREATE AGGREGATE MADLIB_SCHEMA.sum(/* x */ anycompatiblearray) (
     SFUNC     = MADLIB_SCHEMA.array_add,
-    STYPE     = anyarray
+    STYPE     = anycompatiblearray
    m4_ifdef( `__POSTGRESQL__', `', `, PREFUNC   = MADLIB_SCHEMA.array_add')
 );
 
@@ -293,7 +293,7 @@ CREATE AGGREGATE MADLIB_SCHEMA.sum(/* x */ anyarray) (
  * @returns x-y.
  *
  */
-CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.array_sub(x anyarray, y anyarray) RETURNS anyarray
+CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.array_sub(x anycompatiblearray, y anycompatiblearray) RETURNS anycompatiblearray
 AS 'MODULE_PATHNAME', 'array_sub'
 LANGUAGE C IMMUTABLE
 m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `NO SQL', `');
@@ -306,7 +306,7 @@ m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `NO SQL', `');
  * @returns Element-wise product of x and y.
  *
  */
-CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.array_mult(x anyarray, y anyarray) RETURNS anyarray
+CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.array_mult(x anycompatiblearray, y anycompatiblearray) RETURNS anycompatiblearray
 AS 'MODULE_PATHNAME', 'array_mult'
 LANGUAGE C IMMUTABLE
 m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `NO SQL', `');
@@ -319,7 +319,7 @@ m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `NO SQL', `');
  * @returns Element-wise division of x and y.
  *
  */
-CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.array_div(x anyarray, y anyarray) RETURNS anyarray
+CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.array_div(x anycompatiblearray, y anycompatiblearray) RETURNS anycompatiblearray
 AS 'MODULE_PATHNAME', 'array_div'
 LANGUAGE C IMMUTABLE
 m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `NO SQL', `');
@@ -332,7 +332,7 @@ m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `NO SQL', `');
  * @returns Dot-product of x and y.
  *
  */
-CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.array_dot(x anyarray, y anyarray) RETURNS float8
+CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.array_dot(x anycompatiblearray, y anycompatiblearray) RETURNS float8
 AS 'MODULE_PATHNAME', 'array_dot'
 LANGUAGE C IMMUTABLE
 m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `NO SQL', `');
@@ -345,7 +345,7 @@ m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `NO SQL', `');
  * @returns Returns true if x contains y.
  *
  */
-CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.array_contains(x anyarray, y anyarray) RETURNS BOOL
+CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.array_contains(x anycompatiblearray, y anycompatiblearray) RETURNS BOOL
 AS 'MODULE_PATHNAME', 'array_contains'
 LANGUAGE C IMMUTABLE
 m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `NO SQL', `');
@@ -357,7 +357,7 @@ m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `NO SQL', `');
  * @returns Max of x.
  *
  */
-CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.array_max(x anyarray) RETURNS anyelement
+CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.array_max(x anycompatiblearray) RETURNS anycompatible
 AS 'MODULE_PATHNAME', 'array_max'
 LANGUAGE C IMMUTABLE
 m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `NO SQL', `');
@@ -369,7 +369,7 @@ m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `NO SQL', `');
  * @returns Array as [max, index].
  *
  */
-CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.array_max_index(x anyarray) RETURNS float8[]
+CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.array_max_index(x anycompatiblearray) RETURNS float8[]
 AS 'MODULE_PATHNAME', 'array_max_index'
 LANGUAGE C IMMUTABLE
 m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `NO SQL', `');
@@ -381,7 +381,7 @@ m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `NO SQL', `');
  * @returns Min of x.
  *
  */
-CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.array_min(x anyarray) RETURNS anyelement
+CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.array_min(x anycompatiblearray) RETURNS anycompatible
 AS 'MODULE_PATHNAME', 'array_min'
 LANGUAGE C IMMUTABLE
 m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `NO SQL', `');
@@ -393,7 +393,7 @@ m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `NO SQL', `');
  * @returns Array as [min, index].
  *
  */
-CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.array_min_index(x anyarray) RETURNS float8[]
+CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.array_min_index(x anycompatiblearray) RETURNS float8[]
 AS 'MODULE_PATHNAME', 'array_min_index'
 LANGUAGE C IMMUTABLE
 m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `NO SQL', `');
@@ -405,7 +405,7 @@ m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `NO SQL', `');
  * @returns Sum of x.
  *
  */
-CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.array_sum(x anyarray) RETURNS anyelement
+CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.array_sum(x anycompatiblearray) RETURNS anycompatible
 AS 'MODULE_PATHNAME', 'array_sum'
 LANGUAGE C IMMUTABLE
 m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `NO SQL', `');
@@ -418,7 +418,7 @@ m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `NO SQL', `');
  * @returns Sum of x.
  *
  */
-CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.array_sum_big(x anyarray) RETURNS float8
+CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.array_sum_big(x anycompatiblearray) RETURNS float8
 AS 'MODULE_PATHNAME', 'array_sum_big'
 LANGUAGE C IMMUTABLE
 m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `NO SQL', `');
@@ -429,7 +429,7 @@ m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `NO SQL', `');
  * @param x Array x
  * @returns Sum of absolute value of x
  */
-CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.array_abs_sum(x anyarray) RETURNS anyelement
+CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.array_abs_sum(x anycompatiblearray) RETURNS anycompatible
 AS 'MODULE_PATHNAME', 'array_abs_sum'
 LANGUAGE C IMMUTABLE
 m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `NO SQL', `');
@@ -441,7 +441,7 @@ m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `NO SQL', `');
  * @returns Absolute value of all elements of x.
  *
  */
-CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.array_abs(x anyarray) RETURNS anyarray
+CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.array_abs(x anycompatiblearray) RETURNS anycompatiblearray
 AS 'MODULE_PATHNAME', 'array_abs'
 LANGUAGE C IMMUTABLE
 m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `NO SQL', `');
@@ -453,7 +453,7 @@ m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `NO SQL', `');
  * @returns Mean of x.
  *
  */
-CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.array_mean(x anyarray) RETURNS float8
+CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.array_mean(x anycompatiblearray) RETURNS float8
 AS 'MODULE_PATHNAME', 'array_mean'
 LANGUAGE C IMMUTABLE
 m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `NO SQL', `');
@@ -465,7 +465,7 @@ m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `NO SQL', `');
  * @returns Standard deviation of x.
  *
  */
-CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.array_stddev(x anyarray) RETURNS float8
+CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.array_stddev(x anycompatiblearray) RETURNS float8
 AS 'MODULE_PATHNAME', 'array_stddev'
 LANGUAGE C IMMUTABLE
 m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `NO SQL', `');
@@ -502,7 +502,7 @@ m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `NO SQL', `');
  * @returns Fills array with desired value.
  *
  */
-CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.array_fill(x anyarray, k anyelement) RETURNS anyarray
+CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.array_fill(x anycompatiblearray, k anycompatible) RETURNS anycompatiblearray
 AS 'MODULE_PATHNAME', 'array_fill'
 LANGUAGE C IMMUTABLE
 m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `NO SQL', `');
@@ -513,7 +513,7 @@ m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `NO SQL', `');
  * @returns Array with each element of cos(x).
  *
  */
-CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.array_cos(x anyarray) RETURNS anyarray
+CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.array_cos(x anycompatiblearray) RETURNS anycompatiblearray
 AS 'MODULE_PATHNAME', 'array_cos'
 LANGUAGE C IMMUTABLE
 m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `NO SQL', `');
@@ -525,7 +525,7 @@ m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `NO SQL', `');
  * @returns Array with each element of x multiplied by scalar.
  *
  */
-CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.array_scalar_mult(x anyarray, k anyelement) RETURNS anyarray
+CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.array_scalar_mult(x anycompatiblearray, k anycompatible) RETURNS anycompatiblearray
 AS 'MODULE_PATHNAME', 'array_scalar_mult'
 LANGUAGE C IMMUTABLE
 m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `NO SQL', `');
@@ -537,7 +537,7 @@ m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `NO SQL', `');
  * @returns Array with each element of x added by scalar.
  *
  */
-CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.array_scalar_add(x anyarray, k anyelement) RETURNS anyarray
+CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.array_scalar_add(x anycompatiblearray, k anycompatible) RETURNS anycompatiblearray
 AS 'MODULE_PATHNAME', 'array_scalar_add'
 LANGUAGE C IMMUTABLE
 m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `NO SQL', `');
@@ -550,7 +550,7 @@ m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `NO SQL', `');
  * @param op Operator
  * @returns Filtered array.
  */
-CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.array_filter(x anyarray, k anyelement, op text) RETURNS anyarray
+CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.array_filter(x anycompatiblearray, k anycompatible, op text) RETURNS anycompatiblearray
 AS 'MODULE_PATHNAME' LANGUAGE C IMMUTABLE
 m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `NO SQL', `');
 
@@ -560,7 +560,7 @@ m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `NO SQL', `');
  * @param k Scalar
  * @returns Filtered array.
  */
-CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.array_filter(x anyarray, k anyelement) RETURNS anyarray
+CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.array_filter(x anycompatiblearray, k anycompatible) RETURNS anycompatiblearray
 AS 'MODULE_PATHNAME' LANGUAGE C IMMUTABLE
 m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `NO SQL', `');
 
@@ -569,7 +569,7 @@ m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `NO SQL', `');
  * @param x Array x
  * @returns Filtered array.
  */
-CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.array_filter(x anyarray) RETURNS anyarray
+CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.array_filter(x anycompatiblearray) RETURNS anycompatiblearray
 AS 'MODULE_PATHNAME' LANGUAGE C IMMUTABLE
 m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `NO SQL', `');
 
@@ -580,8 +580,8 @@ m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `NO SQL', `');
  * @returns Square root of all elements of x.
  *
  */
-DROP FUNCTION IF EXISTS MADLIB_SCHEMA.array_sqrt(x anyarray) CASCADE;
-CREATE FUNCTION MADLIB_SCHEMA.array_sqrt(x anyarray) RETURNS float8[]
+DROP FUNCTION IF EXISTS MADLIB_SCHEMA.array_sqrt(x anycompatiblearray) CASCADE;
+CREATE FUNCTION MADLIB_SCHEMA.array_sqrt(x anycompatiblearray) RETURNS float8[]
 AS 'MODULE_PATHNAME', 'array_sqrt'
 LANGUAGE C IMMUTABLE
 m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `NO SQL', `');
@@ -594,8 +594,8 @@ m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `NO SQL', `');
  * @returns Power of y for all elements of x.
  *
  */
-DROP FUNCTION IF EXISTS MADLIB_SCHEMA.array_pow(x anyarray, y anyelement) CASCADE;
-CREATE FUNCTION MADLIB_SCHEMA.array_pow(x anyarray, y anyelement) RETURNS anyarray
+DROP FUNCTION IF EXISTS MADLIB_SCHEMA.array_pow(x anycompatiblearray, y anycompatible) CASCADE;
+CREATE FUNCTION MADLIB_SCHEMA.array_pow(x anycompatiblearray, y anycompatible) RETURNS anycompatiblearray
 AS 'MODULE_PATHNAME', 'array_pow'
 LANGUAGE C IMMUTABLE
 m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `NO SQL', `');
@@ -607,8 +607,8 @@ m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `NO SQL', `');
  * @returns Square of all elements of x.
  *
  */
-DROP FUNCTION IF EXISTS MADLIB_SCHEMA.array_square(x anyarray) CASCADE;
-CREATE FUNCTION MADLIB_SCHEMA.array_square(x anyarray) RETURNS float8[]
+DROP FUNCTION IF EXISTS MADLIB_SCHEMA.array_square(x anycompatiblearray) CASCADE;
+CREATE FUNCTION MADLIB_SCHEMA.array_square(x anycompatiblearray) RETURNS float8[]
 AS 'MODULE_PATHNAME', 'array_square'
 LANGUAGE C IMMUTABLE
 m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `NO SQL', `');
@@ -621,7 +621,7 @@ m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `NO SQL', `');
  *
  */
 DROP FUNCTION IF EXISTS MADLIB_SCHEMA.normalize(float8[]) CASCADE;
-CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.normalize(x anyarray) RETURNS float8[]
+CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.normalize(x anycompatiblearray) RETURNS float8[]
 AS 'MODULE_PATHNAME', 'array_normalize' LANGUAGE C IMMUTABLE STRICT
 m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `NO SQL', `');
 
@@ -633,7 +633,7 @@ m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `NO SQL', `');
  *
  */
 DROP FUNCTION IF EXISTS MADLIB_SCHEMA.array_contains_null(float8[]) CASCADE;
-CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.array_contains_null(x anyarray) RETURNS BOOLEAN
+CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.array_contains_null(x anycompatiblearray) RETURNS BOOLEAN
 AS 'MODULE_PATHNAME', 'array_contains_null' LANGUAGE C IMMUTABLE STRICT
 m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `NO SQL', `');
 
@@ -646,7 +646,7 @@ m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `NO SQL', `');
  * @returns Cumulative sum of the elements in x.
  *
  */
-CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.array_cum_sum(x anyarray) RETURNS anyarray
+CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.array_cum_sum(x anycompatiblearray) RETURNS anycompatiblearray
 AS 'MODULE_PATHNAME', 'array_cum_sum'
 LANGUAGE C IMMUTABLE
 m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `NO SQL', `');
@@ -660,7 +660,7 @@ m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `NO SQL', `');
  * @returns Cumulative product of the elements in x.
  *
  */
-CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.array_cum_prod(x anyarray) RETURNS anyarray
+CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.array_cum_prod(x anycompatiblearray) RETURNS anycompatiblearray
 AS 'MODULE_PATHNAME', 'array_cum_prod'
 LANGUAGE C IMMUTABLE
 m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `NO SQL', `');
@@ -678,9 +678,9 @@ m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `NO SQL', `');
  *
  */
 CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.array_unnest_2d_to_1d(
-  x ANYARRAY,
+  x ANYCOMPATIBLEARRAY,
   OUT unnest_row_id INT,
-  OUT unnest_result ANYARRAY
+  OUT unnest_result ANYCOMPATIBLEARRAY
 )
 RETURNS SETOF RECORD
 AS
@@ -731,13 +731,13 @@ FROM (
 ) t
 ORDER BY 1,2;
         """.format(schema_madlib='MADLIB_SCHEMA')
-$$ LANGUAGE PLPYTHONU IMMUTABLE
+$$ LANGUAGE PLPYTHON3U IMMUTABLE
 m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `CONTAINS SQL', `');
 
 m4_changequote(<!, !>)
 m4_ifelse(__PORT__ __DBMS_VERSION_MAJOR__, <!GREENPLUM 4!>,,
 <!
-CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.array_to_bytea(ANYARRAY)
+CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.array_to_bytea(ANYCOMPATIBLEARRAY)
 RETURNS BYTEA
 AS
 'MODULE_PATHNAME', 'array_to_bytea'

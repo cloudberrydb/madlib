@@ -184,7 +184,7 @@ def margins_logregr(schema_madlib, source_table, out_table,
             if not marginal_vars:
                 marginal_vars = range(1, num_depvars + 1)
             else:
-                marginal_vars = map(int, string_to_array(marginal_vars))
+                marginal_vars = list(map(int, string_to_array(marginal_vars)))
             index_array = py_list_to_sql_string(marginal_vars, array_type="integer")
         else:
             index_array = 'NULL'
@@ -543,7 +543,7 @@ def margins_mlogregr(schema_madlib, source_table, out_table,
             else:
                 # For each independent var, get all the indices
                 num_features = len(marginal_vars)
-                marginal_vars_only = map(int, string_to_array(marginal_vars))
+                marginal_vars_only = list(map(int, string_to_array(marginal_vars)))
                 marginal_vars = []
                 for j in range(num_categories - 1):
                     for m in marginal_vars_only:

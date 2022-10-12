@@ -64,7 +64,7 @@ def main(file_paths):
                 is of the form: '.../modules/<module_name>/...'.
     """
     file_order = sorted(file_paths, key=find_order)
-    print " ".join(file_order)
+    print(" ".join(file_order))
 
 
 if __name__ == '__main__':

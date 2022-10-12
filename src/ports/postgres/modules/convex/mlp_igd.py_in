@@ -400,7 +400,7 @@ def mlp(schema_madlib, source_table, output_table, independent_varname,
                     losses = [t['loss'] for t in res]
                     loss = zip(groups, losses) if groups else losses
                     plpy.info("Iteration: {0}, Loss: <{1}>".
-                              format(it.iteration, ', '.join(map(str, loss))))
+                              format(it.iteration, ', '.join(list(map(str, loss)))))
             it.final()
         _update_temp_model_table(it_args, it.iteration, temp_output_table,
                                  is_minibatch_enabled, solver, first_try)
@@ -748,8 +748,8 @@ def _validate_warm_start(output_table, summary_table, standardization_table,
                       param)
     output = plpy.execute("SELECT * FROM {0}".format(output_table))
     num_coeffs = sum(
-        map(lambda i: (layer_sizes[i] + 1) * (layer_sizes[i + 1]),
-            range(len(layer_sizes) - 1)))
+        list(map(lambda i: (layer_sizes[i] + 1) * (layer_sizes[i + 1]),
+            range(len(layer_sizes) - 1))))
     for row in output:
         coeff = row['coeff']
         _assert_equal(num_coeffs,

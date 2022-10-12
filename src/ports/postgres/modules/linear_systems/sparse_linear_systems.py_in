@@ -165,7 +165,7 @@ def _internal_py_array_to_sql_string(array):
 
     @return output SQL array usable in a query
     """
-    return "ARRAY[%s]" % ','.join(map(str, array))
+    return "ARRAY[%s]" % ','.join(list(map(str, array)))
 
 # Help function for sparse linear solvers
 # ========================================================================
@@ -332,7 +332,7 @@ def _load_default_options(optimizer):
 # ========================================================================
 # Convert numeric array to SQL string
 def _internal_py_array_to_sql_string(array):
-    return "ARRAY[%s]" % ','.join(map(str, array))
+    return "ARRAY[%s]" % ','.join(list(map(str, array)))
 
 
 # Main function for sparse linear solvers

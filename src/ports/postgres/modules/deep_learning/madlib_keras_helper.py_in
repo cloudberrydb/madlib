@@ -339,7 +339,7 @@ def py_to_sql(x):
     if type(x) == float:
         return sqlfloat(x)
     elif type(x) == list:
-        return map(py_to_sql, x)
+        return list(map(py_to_sql, x))
     elif x is None:
         return sqlnull()
     else:

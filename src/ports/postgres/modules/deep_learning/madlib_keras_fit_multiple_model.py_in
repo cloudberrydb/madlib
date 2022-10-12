@@ -585,7 +585,7 @@ class FitMultipleModel(object):
 
         if self.custom_mst_keys:
             custom_keys = '({})'.format(
-                ','.join( map(str, self.custom_mst_keys) )
+                ','.join(list(map(str, self.custom_mst_keys)))
             )
 
             # Add object_map to any msts which use custom functions

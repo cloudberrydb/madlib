@@ -18,7 +18,7 @@ set(MADLIB_GPPKG_RPM_FILE_NAME
 find_program(
     GPPKG_BINARY
     gppkg
-    PATH /usr/local/greenplum-db/bin
+    PATH /usr/local/cloudberry-db-devel/bin /usr/local/cloudberry-db/bin
     DOC "Path to gppkg"
 )
 find_program(

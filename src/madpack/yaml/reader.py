@@ -15,6 +15,11 @@
 #   reader.index - the number of the current character.
 #   reader.line, stream.column - the line and the column of the current character.
 
+try:
+    unicode 
+except NameError:
+    unicode = str
+
 __all__ = ['Reader', 'ReaderError']
 
 from error import YAMLError, Mark
@@ -190,7 +195,7 @@ class Reader(object):
                 try:
                     data, converted = self.raw_decode(self.raw_buffer,
                             'strict', self.eof)
-                except UnicodeDecodeError, exc:
+                except UnicodeDecodeError as exc:
                     character = exc.object[exc.start]
                     if self.stream is not None:
                         position = self.stream_pointer-len(self.raw_buffer)+exc.start

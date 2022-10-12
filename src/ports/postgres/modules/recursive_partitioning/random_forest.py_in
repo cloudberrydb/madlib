@@ -33,20 +33,20 @@ from utilities.validate_args import is_var_valid
 from utilities.validate_args import output_tbl_valid
 from utilities.validate_args import table_exists
 
-from decision_tree import _tree_train_using_bins
-from decision_tree import _tree_train_grps_using_bins
-from decision_tree import _get_bins
-from decision_tree import _get_bins_grps
-from decision_tree import _get_features_to_use
-from decision_tree import _is_dep_categorical
-from decision_tree import _get_n_and_deplist
-from decision_tree import _classify_features
-from decision_tree import _get_filter_str
-from decision_tree import _get_display_header
-from decision_tree import get_feature_str
-from decision_tree import get_grouping_array_str
-from decision_tree import _compute_var_importance
-from decision_tree import _create_cat_features_info_table
+from .decision_tree import _tree_train_using_bins
+from .decision_tree import _tree_train_grps_using_bins
+from .decision_tree import _get_bins
+from .decision_tree import _get_bins_grps
+from .decision_tree import _get_features_to_use
+from .decision_tree import _is_dep_categorical
+from .decision_tree import _get_n_and_deplist
+from .decision_tree import _classify_features
+from .decision_tree import _get_filter_str
+from .decision_tree import _get_display_header
+from .decision_tree import get_feature_str
+from .decision_tree import get_grouping_array_str
+from .decision_tree import _compute_var_importance
+from .decision_tree import _create_cat_features_info_table
 # ------------------------------------------------------------
 
 
@@ -651,7 +651,7 @@ def forest_predict(schema_madlib, model, source, output,
     if not is_classification:
         majority_pred_expression = "AVG(aggregated_prediction)"
     else:
-        dep_levels_array_str = py_list_to_sql_string(map(quote_literal, dep_levels),
+        dep_levels_array_str = py_list_to_sql_string(list(map(quote_literal, dep_levels)),
                                                      'TEXT',
                                                      long_format=True)
         majority_pred_expression = (
@@ -1179,7 +1179,7 @@ def _create_summary_table(**kwargs):
             kwargs['dep_list_str'] = "'false, true'"
         else:
             kwargs['dep_list_str'] = '$__dep_list__${0}$__dep_list__$'.format(
-                ','.join(map(str, kwargs['dep_list'])))
+                ','.join(list(map(str, kwargs['dep_list']))))
     else:
         kwargs['dep_list_str'] = "NULL"
     kwargs['indep_type'] = ', '.join(kwargs['all_cols_types'][col]
@@ -1286,11 +1286,12 @@ def _create_group_table(
             {left_join_importance_table_str}
             {join_impurity_table_str}
             """.format(**locals())
-    plpy.notice("sql_create_group_table:\n" + sql_create_group_table)
+    plpy.info("sql_create_group_table:\n" + sql_create_group_table)
     plan_create_group_table = plpy.prepare(sql_create_group_table,
                                            ['text[]', 'boolean[]'])
+    plpy.info("tree_terminated:\n", tree_terminated)
     plpy.execute(plan_create_group_table,
-                 [tree_terminated.keys(),
+                 [list(tree_terminated.keys()),
                   [True if v == 1 else False for v in tree_terminated.values()]])
 # -------------------------------------------------------------------------
 

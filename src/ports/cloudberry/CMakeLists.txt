@@ -1,8 +1,8 @@
 # ------------------------------------------------------------------------------
-# Greenplum Port
+# Cloudberry Port
 # ------------------------------------------------------------------------------
 
-set(PORT "Greenplum")
+set(PORT "Cloudberry")
 string(TOUPPER ${PORT} PORT_UC)
 string(TOLOWER ${PORT} PORT_LC)
 set(PORT_SOURCE_DIR "${CMAKE_CURRENT_SOURCE_DIR}")
@@ -20,7 +20,7 @@ list(APPEND CMAKE_MODULE_PATH
     ${CMAKE_CURRENT_SOURCE_DIR}/cmake
     ${CMAKE_CURRENT_SOURCE_DIR}/../postgres/cmake)
 include(PostgreSQLUtils)
-include(GreenplumUtils)
+include(CloudberryUtils)
 
 
 # -- 1. Specify files that will be compiled into the shared library, for *all*
@@ -208,7 +208,7 @@ function(add_${PORT_LC}_library IN_PORT_VERSION)
 
 # -- 4.2. Preprocess all Python files ------------------------------------------
 
-    define_greenplum_features(${IN_PORT_VERSION} DBMS_FEATURES)
+    define_cloudberry_features(${IN_PORT_VERSION} DBMS_FEATURES)
     define_m4_macros(M4_DEFINES_CMD_LINE M4_DEFINES_CODE ${DBMS_FEATURES})
 
     add_python_files(
@@ -269,9 +269,7 @@ function(add_${PORT_LC}_library IN_PORT_VERSION)
 
 # -- 4.4. Generate gppkg deployment scripts. Note: These are generated CMake
 #       scripts! ---------------------------------------------------------------
-    if(NOT (${IN_PORT_VERSION} VERSION_LESS "4.2"))
-        add_gppkg(${IN_PORT_VERSION} Greenplum gp 1.0)
-    endif(NOT (${IN_PORT_VERSION} VERSION_LESS "4.2"))
+    add_gppkg(${IN_PORT_VERSION} Cloudberry cbdb 1.0)
 
 endfunction(add_${PORT_LC}_library)
 
@@ -288,7 +286,7 @@ macro(add_current_${PORT_LC}_version)
 
     find_package(${PORT}_${_VERSION_UNDERSCORES})
     if(${PORT_UC}_${_VERSION_UNDERSCORES}_FOUND)
-        add_greenplum_library(${_VERSION})
+        add_cloudberry_library(${_VERSION})
     endif(${PORT_UC}_${_VERSION_UNDERSCORES}_FOUND)
 endmacro(add_current_${PORT_LC}_version)
 

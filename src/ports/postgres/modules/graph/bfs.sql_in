@@ -408,7 +408,7 @@ CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.graph_bfs(
     grouping_cols           TEXT
 ) RETURNS VOID AS $$
     PythonFunction(graph, bfs, graph_bfs)
-$$ LANGUAGE plpythonu VOLATILE
+$$ LANGUAGE plpython3u VOLATILE
 m4_ifdef(`\_\_HAS_FUNCTION_PROPERTIES\_\_', `MODIFIES SQL DATA', `');
 
 -------------------------------------------------------------------------
@@ -463,7 +463,7 @@ CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.graph_bfs(
     message VARCHAR
 ) RETURNS VARCHAR AS $$
     PythonFunction(graph, bfs, graph_bfs_help)
-$$ LANGUAGE plpythonu IMMUTABLE
+$$ LANGUAGE plpython3u IMMUTABLE
 m4_ifdef(`\_\_HAS_FUNCTION_PROPERTIES\_\_', `CONTAINS SQL', `');
 
 --------------------------------------------------------------------------------

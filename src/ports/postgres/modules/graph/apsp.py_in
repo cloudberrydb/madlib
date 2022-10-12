@@ -29,9 +29,9 @@
 
 
 import plpy
-from graph_utils import validate_graph_coding
-from graph_utils import get_graph_usage
-from graph_utils import get_edge_params
+from .graph_utils import validate_graph_coding
+from .graph_utils import get_graph_usage
+from .graph_utils import get_edge_params
 from utilities.control import MinWarning
 from utilities.utilities import _assert
 from utilities.utilities import _check_groups
@@ -553,7 +553,7 @@ def graph_apsp_get_path(schema_madlib, apsp_table,
                     ({apsp_table}.{dest} = {temp1_name}.{vertex_id}
                         {check_grps_t1})
                 WHERE {src} = {source_vertex_sql} AND
-                    {apsp_table}.parent <> {apsp_table}.{dest}
+                    {apsp_table}.parent != {apsp_table}.{dest}
                 """.format(**locals()))
 
             tmp = temp2_name
@@ -578,7 +578,7 @@ def graph_apsp_get_path(schema_madlib, apsp_table,
             CREATE TABLE {path_table} AS
             SELECT {grp_comma} {source_vertex_sql}::{final_type} || ({vertex_id} || path) AS path
             FROM {temp2_name}
-            WHERE {vertex_id} <> {dest_vertex_sql}
+            WHERE {vertex_id} != {dest_vertex_sql}
             UNION
             SELECT {grp_comma} {source_vertex_sql}::{final_type} || path AS path
             FROM {temp2_name}

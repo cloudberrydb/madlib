@@ -286,11 +286,11 @@ def parse_optimizer(compile_dict):
     else:
         opt_params = opt_split[1][:-1]
         opt_params_array = opt_params.split(',')
-        opt_params_clean = map(split_and_strip, opt_params_array)
+        opt_params_clean = list(map(split_and_strip, opt_params_array))
         key_value_params = { x[0] : x[1] for x in opt_params_clean}
 
         final_args = {}
-        for key,value in key_value_params.iteritems():
+        for key,value in key_value_params.items():
             if value == 'None':
                 final_args[key] = None
             elif value == 'True' or value == 'False':

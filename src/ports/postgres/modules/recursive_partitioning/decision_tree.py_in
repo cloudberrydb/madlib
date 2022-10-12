@@ -269,7 +269,7 @@ def _get_tree_states(schema_madlib, is_classification, split_criterion,
                                           for i, c in enumerate(dep_list)]) +
                            "\nEND)")
     else:
-        n_rows = long(plpy.execute("SELECT count(*)::bigint "
+        n_rows = int(plpy.execute("SELECT count(*)::bigint "
                                    "FROM {src} "
                                    "WHERE {filter}".
                                    format(src=training_table_name,
@@ -600,7 +600,7 @@ def _get_n_and_deplist(training_table_name, dependent_variable, filter_null):
                    filter_null=filter_null)
     r = plpy.execute(sql)[0]
     r['n_rows'] = 0 if r['n_rows'] is None else r['n_rows']
-    return long(r['n_rows']), r['dep']
+    return int(r['n_rows']), r['dep']
 # ------------------------------------------------------------
 
 
@@ -1082,10 +1082,10 @@ def _create_cat_features_info_table(cat_features_info_table, bins):
                 cat_names, cat_levels = zip(*cat_names_levels)
                 # categorical features in current group (expressed in an array)
                 cat_names_str = py_list_to_sql_string(
-                    map(quote_literal, cat_names), 'text', long_format=True)
+                    list(map(quote_literal, cat_names)), 'text', long_format=True)
                 # number of levels in each cat feature
                 cat_n_levels_str = py_list_to_sql_string(
-                    map(len, cat_levels), 'integer', long_format=True)
+                    list(map(len, cat_levels)), 'integer', long_format=True)
                 # flatten the levels across all cat features
                 cat_levels = [quote_literal(each_level)
                               for sublist in cat_levels
@@ -1105,10 +1105,10 @@ def _create_cat_features_info_table(cat_features_info_table, bins):
         # no grouping
         if bins['cat_features']:
             cat_names_str = py_list_to_sql_string(
-                map(quote_literal, bins['cat_features']), 'text', long_format=True)
+                list(map(quote_literal, bins['cat_features'])), 'text', long_format=True)
             cat_n_levels_str = py_list_to_sql_string(bins['cat_n'], 'integer', long_format=True)
             cat_levels_str = py_list_to_sql_string(
-                map(quote_literal, bins['cat_origin']), 'text', long_format=True)
+                list(map(quote_literal, bins['cat_origin'])), 'text', long_format=True)
         else:
             cat_names_str = cat_n_levels_str = cat_levels_str = "NULL"
         cat_features_info_values.append(
@@ -1566,7 +1566,7 @@ def _create_summary_table(
             dep_list_str = "'false, true'"
         else:
             dep_list_str = '$__dep_list__${0}$__dep_list__$'.format(
-                ','.join(map(str, dep_list)))
+                ','.join(list(map(str, dep_list))))
     else:
         dep_list_str = "NULL"
     indep_type = ', '.join(all_cols_types[c] for c in cat_features + con_features)
@@ -1765,7 +1765,7 @@ def tree_predict(schema_madlib, model, source, output, pred_type='response',
                             "end)::BOOLEAN as {pred_name}")
         else:
             dep_cast_str = "{pred_name}::{dep_type}"
-        dep_levels_array_str = py_list_to_sql_string(map(quote_literal, dep_levels),
+        dep_levels_array_str = py_list_to_sql_string(list(map(quote_literal, dep_levels)),
                                                      'TEXT',
                                                      long_format=True)
         if pred_type == "response":

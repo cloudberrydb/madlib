@@ -22,7 +22,7 @@
 
   <groupId>org.apache.madlib</groupId>
   <artifactId>madlib</artifactId>
-  <version>1.21.0-dev</version>
+  <version>1.21.0</version>
   <packaging>pom</packaging>
 
   <build>
@@ -379,22 +379,22 @@
               <exclude>src/patch/CMakeLists.txt</exclude>
               <exclude>src/patch/PyXB.sh</exclude>
               <exclude>src/ports/CMakeLists.txt</exclude>
-              <exclude>src/ports/greenplum/4.1/CMakeLists.txt</exclude>
-              <exclude>src/ports/greenplum/4.1/patch/CMakeLists.txt</exclude>
-              <exclude>src/ports/greenplum/4.1/patch/Versions_4_1_0_to_4_1_1.sh.in</exclude>
-              <exclude>src/ports/greenplum/4.2/CMakeLists.txt</exclude>
-              <exclude>src/ports/greenplum/4.3/CMakeLists.txt</exclude>
-              <exclude>src/ports/greenplum/4.3ORCA/CMakeLists.txt</exclude>
-              <exclude>src/ports/greenplum/cmake/FindGreenplum.cmake</exclude>
-              <exclude>src/ports/greenplum/cmake/FindGreenplum_4_0.cmake</exclude>
-              <exclude>src/ports/greenplum/cmake/FindGreenplum_4_1.cmake</exclude>
-              <exclude>src/ports/greenplum/cmake/FindGreenplum_4_2.cmake</exclude>
-              <exclude>src/ports/greenplum/cmake/FindGreenplum_4_3.cmake</exclude>
-              <exclude>src/ports/greenplum/cmake/FindGreenplum_4_3ORCA.cmake</exclude>
-              <exclude>src/ports/greenplum/cmake/GreenplumUtils.cmake</exclude>
-              <exclude>src/ports/greenplum/CMakeLists.txt</exclude>
-              <exclude>src/ports/greenplum/dbconnector/Compatibility.hpp</exclude>
-              <exclude>src/ports/greenplum/dbconnector/dbconnector.hpp</exclude>
+              <exclude>src/ports/cloudberry/4.1/CMakeLists.txt</exclude>
+              <exclude>src/ports/cloudberry/4.1/patch/CMakeLists.txt</exclude>
+              <exclude>src/ports/cloudberry/4.1/patch/Versions_4_1_0_to_4_1_1.sh.in</exclude>
+              <exclude>src/ports/cloudberry/4.2/CMakeLists.txt</exclude>
+              <exclude>src/ports/cloudberry/4.3/CMakeLists.txt</exclude>
+              <exclude>src/ports/cloudberry/4.3ORCA/CMakeLists.txt</exclude>
+              <exclude>src/ports/cloudberry/cmake/FindGreenplum.cmake</exclude>
+              <exclude>src/ports/cloudberry/cmake/FindGreenplum_4_0.cmake</exclude>
+              <exclude>src/ports/cloudberry/cmake/FindGreenplum_4_1.cmake</exclude>
+              <exclude>src/ports/cloudberry/cmake/FindGreenplum_4_2.cmake</exclude>
+              <exclude>src/ports/cloudberry/cmake/FindGreenplum_4_3.cmake</exclude>
+              <exclude>src/ports/cloudberry/cmake/FindGreenplum_4_3ORCA.cmake</exclude>
+              <exclude>src/ports/cloudberry/cmake/GreenplumUtils.cmake</exclude>
+              <exclude>src/ports/cloudberry/CMakeLists.txt</exclude>
+              <exclude>src/ports/cloudberry/dbconnector/Compatibility.hpp</exclude>
+              <exclude>src/ports/cloudberry/dbconnector/dbconnector.hpp</exclude>
               <exclude>src/ports/postgres/8.4/CMakeLists.txt</exclude>
               <exclude>src/ports/postgres/8.4/patch/CMakeLists.txt</exclude>
               <exclude>src/ports/postgres/8.4/patch/Versions_8_4_and_below.sh.in</exclude>

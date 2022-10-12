@@ -60,7 +60,7 @@ $$ LANGUAGE SQL;
 -- num_buffers_calc() represents the num_buffers value that should be
 --  calculated by the preprocessor.
 -- For postgres, just need total rows / buffer_size rounded up.
--- For greenplum, we take that result, and round up to the nearest multiple
+-- For cloudberry, we take that result, and round up to the nearest multiple
 --   of num_segments.
 CREATE FUNCTION num_buffers_calc(rows_in_tbl INTEGER, buffer_size INTEGER)
 RETURNS INTEGER AS
@@ -76,7 +76,7 @@ $$ LANGUAGE SQL;
 --      be returned in the output table.
 --   For postgres, this should always be the same as num_buffers_calc()
 --      (as long as rows_in_tbl > 0, which should be validated elsewhere)
---   For greenplum, this can be less than num_buffers_calc() in
+--   For cloudberry, this can be less than num_buffers_calc() in
 --     the special case where there is only one row per buffer.  In
 --      that case, the buffers in the output table will be equal to
 --      the number of rows in the input table.  This can only happen

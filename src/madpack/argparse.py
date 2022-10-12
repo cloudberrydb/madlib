@@ -2273,7 +2273,7 @@ class ArgumentParser(_AttributeHolder, _ActionsContainer):
     def _check_value(self, action, value):
         # converted value must be one of the choices (if specified)
         if action.choices is not None and value not in action.choices:
-            tup = value, ', '.join(map(repr, action.choices))
+            tup = value, ', '.join(list(map(repr, action.choices)))
             msg = _('invalid choice: %r (choose from %s)') % tup
             raise ArgumentError(action, msg)
 

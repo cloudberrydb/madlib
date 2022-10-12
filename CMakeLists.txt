@@ -125,7 +125,7 @@ if(CMAKE_COMPILER_IS_GNUCC)
     # http://pubs.opengroup.org/onlinepubs/9699919799/functions/V2_chap02.html#tag_15_02_01_01
     # We specify that we are POSIX.1-2001 compliant and XSI-conforming. We only
     # need to specify _XOPEN_SOURCE as _POSIX_C_SOURCE will be set implicitly.
-    set(CMAKE_C_FLAGS "-pedantic -Wall -Wextra -Wno-clobbered -D_XOPEN_SOURCE=600")
+    set(CMAKE_C_FLAGS "-fsigned-char -pedantic -Wall -Wextra -Wno-clobbered -D_XOPEN_SOURCE=600")
     if((CMAKE_C_COMPILER_VERSION VERSION_EQUAL 5.0) OR (CMAKE_C_COMPILER_VERSION VERSION_GREATER 5.0))
         # Versions 5+ fail with the "Release" build type i.e. when optimization
         # level is -O3 or greater.
@@ -155,7 +155,7 @@ if(CMAKE_COMPILER_IS_GNUCXX)
         set(SSE_DISABLE_OPTIONS "-mno-sse2")
     endif()
 
-    set(CMAKE_CXX_FLAGS "-fdiagnostics-show-option -Wall -Wextra -pedantic -Wconversion -Wno-long-long -Wno-clobbered ${SSE_DISABLE_OPTIONS} -fstrict-aliasing"
+    set(CMAKE_CXX_FLAGS "-fsigned-char -fdiagnostics-show-option -Wall -Wextra -pedantic -Wconversion -Wno-long-long -Wno-clobbered ${SSE_DISABLE_OPTIONS} -fstrict-aliasing"
     )
     if (CXX11)
         set(CMAKE_CXX_FLAGS "-std=gnu++11 ${CMAKE_CXX_FLAGS}"

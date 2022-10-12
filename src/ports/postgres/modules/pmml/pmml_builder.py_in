@@ -1,9 +1,8 @@
 import plpy
 
-from binding import *
-import binding
+from .binding import *
 from pyxb.utils.domutils import BindingDOMSupport as bds
-from formula import Formula
+from .formula import Formula
 
 from glm.glm import __extract_family_params as extract_family_params
 
@@ -142,7 +141,7 @@ class PMMLBuilder(object):
     def _format(self, pmml):
         """Returns a pretty-printed XML string for the given PMML.
         """
-        bds.SetDefaultNamespace(binding.Namespace)  # avoid ns:xxx prefix
+        bds.SetDefaultNamespace(Namespace)  # avoid ns:xxx prefix
         declaration = "<?xml version=\"1.0\" standalone=\"yes\"?>\n"
         xml = pmml.toDOM().toprettyxml(indent="  ")
         self.pmml_str = declaration + "\n".join(xml.split("\n")[1:])
@@ -530,7 +529,7 @@ class MultinomRegressionPMMLBuilder(MultiClassRegressionPMMLBuilder):
             # grouping values -> { category -> coef}
             coef_dict[grp_val].update({r['category']: r['coef']})
         self.grouped_coefs = [dict(zip(self.grouping_keys, grp_val)+[('coef', coef)])
-                              for grp_val, coef in coef_dict.iteritems()]
+                              for grp_val, coef in coef_dict.items()]
         self.coef0 = coef_dict.values()[0]
         self.n_coef = len(self.coef0.values()[0])
 
@@ -542,7 +541,7 @@ class MultinomRegressionPMMLBuilder(MultiClassRegressionPMMLBuilder):
 
         # pcells
         pcell_forest = []
-        for cate, coef_per_cate in coef.iteritems():
+        for cate, coef_per_cate in coef.items():
             pcell_forest.append(PCell(parameterName="p0",
                                       beta=0, df='1', targetCategory=cate))
             for i, c in enumerate(coef_per_cate):

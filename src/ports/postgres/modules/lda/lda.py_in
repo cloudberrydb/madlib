@@ -1022,7 +1022,7 @@ def index_sort(arr, **kwargs):
     dim = len(arr)
     idx = range(dim)
     idx.sort(key=lambda r: arr[r])
-    return array_to_string(map(lambda r: r + 1, idx))
+    return array_to_string(list(map(lambda r: r + 1, idx)))
 
 
 def _convert_data_table(schema_madlib, data_table):
@@ -1236,7 +1236,7 @@ def _validate_output_data_table(output_data_table, topic_num):
         """.format(output_data_table=output_data_table))
     _assert(rv[0]['min_dim'] == rv[0]['max_dim'] and
             rv[0]['min_dim'] == topic_num,
-            "Dimension mismatch - array_upper(topic_count, 1) <> topic_num")
+            "Dimension mismatch - array_upper(topic_count, 1) != topic_num")
 
 
 def _validate_model_table(model_table):

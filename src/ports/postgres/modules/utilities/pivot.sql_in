@@ -258,14 +258,14 @@ SELECT * FROM pivout ORDER BY id;
 -# Now create a custom aggregate.  Note that the aggregate
 must have a strict transition function:
 <pre class="example">
-DROP FUNCTION IF EXISTS array_add1 (ANYARRAY, ANYELEMENT) CASCADE;
-CREATE FUNCTION array_add1(ANYARRAY, ANYELEMENT) RETURNS ANYARRAY AS $$
+DROP FUNCTION IF EXISTS array_add1 (ANYCOMPATIBLEARRAY, ANYCOMPATIBLE) CASCADE;
+CREATE FUNCTION array_add1(ANYCOMPATIBLEARRAY, ANYCOMPATIBLE) RETURNS ANYCOMPATIBLEARRAY AS $$
   SELECT $1 || $2
 $$ LANGUAGE sql STRICT;
-DROP AGGREGATE IF EXISTS array_accum1 (anyelement);
-CREATE AGGREGATE array_accum1 (anyelement) (
+DROP AGGREGATE IF EXISTS array_accum1 (anycompatible);
+CREATE AGGREGATE array_accum1 (anycompatible) (
     sfunc = array_add1,
-    stype = anyarray,
+    stype = anycompatiblearray,
     initcond = '{}'
 );
 DROP TABLE IF EXISTS pivout;
@@ -731,7 +731,7 @@ CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.pivot(
 
 ) RETURNS VOID AS $$
     PythonFunction(utilities, pivot, pivot)
-$$ LANGUAGE plpythonu VOLATILE
+$$ LANGUAGE plpython3u VOLATILE
 m4_ifdef(`\_\_HAS_FUNCTION_PROPERTIES\_\_', `MODIFIES SQL DATA', `');
 
 CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.pivot(
@@ -837,7 +837,7 @@ CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.pivot(
     message VARCHAR
 ) RETURNS VARCHAR AS $$
     PythonFunction(utilities, pivot, pivot_help)
-$$ LANGUAGE plpythonu IMMUTABLE
+$$ LANGUAGE plpython3u IMMUTABLE
 m4_ifdef(`\_\_HAS_FUNCTION_PROPERTIES\_\_', `CONTAINS SQL', `');
 
 --------------------------------------------------------------------------------

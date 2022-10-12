@@ -5,8 +5,10 @@ macro(rh_version OUT_VERSION)
         string(REGEX REPLACE "[^0-9.]*([0-9.]+)[^0-9.]*\$" "\\1" ${OUT_VERSION}
             "${_REDHAT_RELEASE_CONTENT}"
         )
+        set(OSVER "rhel")
     else(EXISTS "/etc/redhat-release")
         set(${OUT_VERSION} "${OUT_VERSION}-NOTFOUND")
+        set(OSVER "rhel")
     endif(EXISTS "/etc/redhat-release")
 
     if(EXISTS "/etc/photon-release")
@@ -15,7 +17,16 @@ macro(rh_version OUT_VERSION)
         ${OUT_VERSION}
             "${_PHOTON_RELEASE_CONTENT}"
         )
+        set(OSVER "rhel")
     endif(EXISTS "/etc/photon-release")
+
+    if(EXISTS "/etc/kylin-release")
+        file(READ "/etc/kylin-release" _KYLIN_RELEASE_CONTENT)
+        string(REGEX REPLACE "[^0-9.]*([0-9.]+)[^0-9.]*\$" "\\1" ${OUT_VERSION}
+            "${_KYLIN_RELEASE_CONTENT}"
+        )
+        set(OSVER "kylin")
+    endif(EXISTS "/etc/kylin-release")
 endmacro(rh_version)
 
 # Get the Debian version

@@ -66,7 +66,7 @@ function(determine_target_versions OUT_VERSIONS)
     if(NOT DEFINED ${OUT_VERSIONS})
         find_package(${PORT})
         if(${PORT_UC}_FOUND)
-            set(VERSION "${${PORT_UC}_VERSION_MAJOR}.${${PORT_UC}_VERSION_MINOR}")
+            set(VERSION "${${PORT_UC}_VERSION_MAJOR}")
             if(${PORT_UC} STREQUAL "GREENPLUM")
                 # Starting GPDB 5.0, semantic versioning will be followed,
                 # implying we only need 1 folder for same major versions

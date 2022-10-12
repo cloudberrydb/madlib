@@ -8,6 +8,10 @@
 
 @brief Robust variance: Common functions
 """
+import sys
+import os
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 import plpy
 from utilities.utilities import _assert
 from utilities.utilities import unique_string

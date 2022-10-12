@@ -18,7 +18,7 @@ m4_changequote(<!,!>)
  *
  * @param $1 python statement which might raise an exception
  *
- * Use this macro in the sql definition of a plpythonu function
+ * Use this macro in the sql definition of a plpython3u function
  *   that runs on the segments.  If the function raises an exception,
  *   traceback information will be attached to the exception message
  *   which gets forwarded back to the coordinator.
@@ -36,7 +36,7 @@ m4_define(<!WithTracebackForwarding!>, <!
     try:
         $1
     except Exception as e:
-        global SD
+        #global SD
         global GD
 
         for k in SD.keys():
@@ -68,7 +68,7 @@ m4_define(<!WithTracebackForwarding!>, <!
  *     "indepColumn" VARCHAR)
  * RETURNS DOUBLE PRECISION[]
  * AS $$PythonFunction(regress, logistic, compute_logregr_coef)$$
- * LANGUAGE plpythonu VOLATILE;
+ * LANGUAGE plpython3u VOLATILE;
  */
 m4_define(<!PythonFunction!>, <!
     import sys
@@ -81,19 +81,19 @@ m4_define(<!PythonFunction!>, <!
     # Make it available as variable: schema_madlib
     fname = getframeinfo(currentframe()).function
     foid  = fname.rsplit('_',1)[1]
-
-    # plpython names its functions "__plpython_procedure_<function name>_<oid>",
-    # of which we want the oid
-    rv = plpy.execute('SELECT nspname, proname FROM pg_proc p ' \
-         'JOIN pg_namespace n ON (p.pronamespace = n.oid) ' \
-         'WHERE p.oid = %s' % foid, 1)
-
-    global schema_madlib
-    schema_madlib = rv[0]['nspname']
-
     from utilities.control import AOControl
-    with AOControl(False):
-        return $2.$3(**globals())
+    # global schema_madlib for python3.x
+    def gb():
+        # plpython names its functions "__plpython_procedure_<function name>_<oid>",
+        # of which we want the oid
+        rv = plpy.execute('SELECT nspname, proname FROM pg_proc p ' \
+             'JOIN pg_namespace n ON (p.pronamespace = n.oid) ' \
+             'WHERE p.oid = %s' % foid, 1)
+        global schema_madlib 
+        schema_madlib = rv[0]['nspname']
+        with AOControl(False):
+            return $2.$3(**globals())
+    return gb()
 !>)
 
 /*
@@ -114,16 +114,18 @@ m4_define(<!PythonFunctionBodyOnly!>, <!
     # Make it available as variable: schema_madlib
     fname = getframeinfo(currentframe()).function
     foid  = fname.rsplit('_',1)[1]
-
-    # plpython names its functions "__plpython_procedure_<function name>_<oid>",
-    # of which we want the oid
-    rv = plpy.execute('SELECT nspname, proname FROM pg_proc p ' \
-         'JOIN pg_namespace n ON (p.pronamespace = n.oid) ' \
-         'WHERE p.oid = %s' % foid, 1)
-
-    global schema_madlib
-    schema_madlib = rv[0]['nspname']
     from utilities.control import AOControl,MinWarning
+    # global schema_madlib for python3.x
+    def gb():
+        # plpython names its functions "__plpython_procedure_<function name>_<oid>",
+        # of which we want the oid
+        rv = plpy.execute('SELECT nspname, proname FROM pg_proc p ' \
+             'JOIN pg_namespace n ON (p.pronamespace = n.oid) ' \
+             'WHERE p.oid = %s' % foid, 1)
+
+        global schema_madlib 
+        schema_madlib = rv[0]['nspname']
+    gb()
 !>)
 
 /*

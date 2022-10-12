@@ -1605,7 +1605,7 @@ SELECT {schema_madlib}.dbscan(
                                the dataset into smaller spacial regions for optimal parallel performance.
                                The default ( NULL or ommitted ) value means it will be unlimited,
                                but note that it will never break the data up into more regions than
-                               segments in a greenplum cluster, and in some cases may choose fewer.
+                               segments in a cloudberry cluster, and in some cases may choose fewer.
                                Setting this to non-NULL will decrease up-front overhead, and can
                                be useful if you expect to find only a small number of densely populated
                                clusters, or if the dataset itself is small enough where initial planning

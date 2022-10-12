@@ -217,7 +217,7 @@ CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.stratified_sample(
   with_replacement   BOOLEAN
 ) RETURNS VOID AS $$
     PythonFunction(sample, stratified_sample, stratified_sample)
-$$ LANGUAGE plpythonu VOLATILE
+$$ LANGUAGE plpython3u VOLATILE
 m4_ifdef(`\_\_HAS_FUNCTION_PROPERTIES\_\_', `MODIFIES SQL DATA', `');
 
 -------------------------------------------------------------------------------
@@ -257,7 +257,7 @@ CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.stratified_sample(
     message VARCHAR
 ) RETURNS VARCHAR AS $$
     PythonFunction(sample, stratified_sample, stratified_sample_help)
-$$ LANGUAGE plpythonu IMMUTABLE
+$$ LANGUAGE plpython3u IMMUTABLE
 m4_ifdef(`\_\_HAS_FUNCTION_PROPERTIES\_\_', `CONTAINS SQL', `');
 
 -------------------------------------------------------------------------------

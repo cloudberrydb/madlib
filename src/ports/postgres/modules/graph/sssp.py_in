@@ -28,9 +28,9 @@
 """
 
 import plpy
-from graph_utils import validate_graph_coding
-from graph_utils import get_graph_usage
-from graph_utils import get_edge_params
+from .graph_utils import validate_graph_coding
+from .graph_utils import get_graph_usage
+from .graph_utils import get_edge_params
 from utilities.control import MinWarning
 from utilities.control import OptimizerControl
 
@@ -542,7 +542,7 @@ def graph_sssp_get_path(schema_madlib, sssp_table, dest_vertex, path_table,
                 FROM {sssp_table} INNER JOIN {temp1_name} ON
                     ({sssp_table}.{vertex_id} = {temp1_name}.{vertex_id}
                         {check_grps_t1})
-                WHERE {source_vertex_sql}::{final_type} <> {sssp_table}.{vertex_id}::{final_type}
+                WHERE {source_vertex_sql}::{final_type} != {sssp_table}.{vertex_id}::{final_type}
                 """.format(**locals()))
 
             tmp = temp2_name

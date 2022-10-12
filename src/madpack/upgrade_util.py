@@ -178,7 +178,7 @@ class ChangeHandler(UpgradeBase):
         _return_obj = defaultdict(list) if not output_config_dict else output_config_dict
         if config_iterable is not None:
             for each_config in config_iterable:
-                for obj_name, obj_details in each_config.iteritems():
+                for obj_name, obj_details in each_config.items():
                     formatted_obj = {}
                     for k, v in obj_details.items():
                         v = v.lower().replace('schema_madlib', self._schema) if v else ""
@@ -378,9 +378,7 @@ class ChangeHandler(UpgradeBase):
         for opc, li in self._udoc.items():
             for e in li:
                 changed_opcs.add((opc, e['index']))
-        gte_gpdb5 = (self._portid == 'greenplum' and
-                     is_rev_gte(get_rev_num(self._dbver), get_rev_num('5.0')))
-        if (self._portid == 'postgres' or gte_gpdb5):
+        if (self._portid == 'postgres' or self._portid == 'cloudberry'):
             method_col = 'opcmethod'
         else:
             method_col = 'opcamid'
@@ -631,7 +629,7 @@ class ViewDependency(UpgradeBase):
 
         while True:
             new_checklist = []
-            for depender, dependeelist in self._view2view.iteritems():
+            for depender, dependeelist in self._view2view.items():
                 for dependee in dependeelist:
                     if dependee in checklist and depender not in checklist:
                         new_checklist.append(depender)
@@ -643,7 +641,7 @@ class ViewDependency(UpgradeBase):
 
         # Filter recursive dependencies not related with MADLib UDF/UDAs
         filtered_view2view = defaultdict(list)
-        for depender, dependeelist in self._view2view.iteritems():
+        for depender, dependeelist in self._view2view.items():
             filtered_dependeelist = [r for r in dependeelist if r in checklist]
             if len(filtered_dependeelist) > 0:
                 filtered_view2view[depender] = filtered_dependeelist
@@ -980,9 +978,7 @@ class ScriptCleaner(UpgradeBase):
         """
         @brief Get the existing UDOCs in the current version
         """
-        gte_gpdb5 = (self._portid == 'greenplum' and
-                     is_rev_gte(get_rev_num(self._dbver), get_rev_num('5.0')))
-        if (self._portid == 'postgres' or gte_gpdb5):
+        if (self._portid == 'postgres' or self._portid == 'cloudberry'):
             method_col = 'opcmethod'
         else:
             method_col = 'opcamid'
@@ -1122,7 +1118,7 @@ class ScriptCleaner(UpgradeBase):
         self._get_existing_uda()
         aggregate_patterns = []
 
-        for each_uda, uda_details in self._existing_uda.iteritems():
+        for each_uda, uda_details in self._existing_uda.items():
             for each_item in uda_details:
                 if each_uda in self._ch.uda:
                     if each_item in self._ch.uda[each_uda]:

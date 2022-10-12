@@ -16961,7 +16961,7 @@ def _BuildAutomaton ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 36, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 36, 8))
     counters.add(cc_0)
     states = []
     final_update = None
@@ -17003,15 +17003,15 @@ def _BuildAutomaton_ ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 44, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 44, 8))
     counters.add(cc_0)
-    cc_1 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 45, 8))
+    cc_1 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 45, 8))
     counters.add(cc_1)
-    cc_2 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 46, 8))
+    cc_2 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 46, 8))
     counters.add(cc_2)
-    cc_3 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 47, 8))
+    cc_3 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 47, 8))
     counters.add(cc_3)
-    cc_4 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 48, 8))
+    cc_4 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 48, 8))
     counters.add(cc_4)
     states = []
     final_update = set()
@@ -17094,7 +17094,7 @@ def _BuildAutomaton_2 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 58, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 58, 8))
     counters.add(cc_0)
     states = []
     final_update = set()
@@ -17123,7 +17123,7 @@ def _BuildAutomaton_3 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 68, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 68, 8))
     counters.add(cc_0)
     states = []
     final_update = None
@@ -17159,7 +17159,7 @@ def _BuildAutomaton_4 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 96, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 96, 8))
     counters.add(cc_0)
     states = []
     final_update = None
@@ -17193,7 +17193,7 @@ def _BuildAutomaton_5 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 142, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 142, 8))
     counters.add(cc_0)
     states = []
     final_update = set()
@@ -17220,7 +17220,7 @@ def _BuildAutomaton_6 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 149, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 149, 8))
     counters.add(cc_0)
     states = []
     final_update = set()
@@ -17247,7 +17247,7 @@ def _BuildAutomaton_7 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 156, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 156, 8))
     counters.add(cc_0)
     states = []
     final_update = set()
@@ -17274,7 +17274,7 @@ def _BuildAutomaton_8 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 163, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 163, 8))
     counters.add(cc_0)
     states = []
     final_update = set()
@@ -17301,7 +17301,7 @@ def _BuildAutomaton_9 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 178, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 178, 8))
     counters.add(cc_0)
     states = []
     final_update = set()
@@ -17328,7 +17328,7 @@ def _BuildAutomaton_10 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 185, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 185, 8))
     counters.add(cc_0)
     states = []
     final_update = set()
@@ -17355,7 +17355,7 @@ def _BuildAutomaton_11 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 192, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 192, 8))
     counters.add(cc_0)
     states = []
     final_update = set()
@@ -17384,7 +17384,7 @@ def _BuildAutomaton_12 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 225, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 225, 8))
     counters.add(cc_0)
     states = []
     final_update = None
@@ -17420,7 +17420,7 @@ def _BuildAutomaton_13 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 233, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 233, 8))
     counters.add(cc_0)
     states = []
     final_update = set()
@@ -17449,7 +17449,7 @@ def _BuildAutomaton_14 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 274, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 274, 8))
     counters.add(cc_0)
     states = []
     final_update = None
@@ -17489,9 +17489,9 @@ def _BuildAutomaton_15 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 479, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 479, 8))
     counters.add(cc_0)
-    cc_1 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 482, 6))
+    cc_1 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 482, 6))
     counters.add(cc_1)
     states = []
     final_update = None
@@ -17540,9 +17540,9 @@ def _BuildAutomaton_16 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 479, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 479, 8))
     counters.add(cc_0)
-    cc_1 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 482, 6))
+    cc_1 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 482, 6))
     counters.add(cc_1)
     states = []
     final_update = None
@@ -17627,13 +17627,13 @@ def _BuildAutomaton_17 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 511, 8))
+    cc_0 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 511, 8))
     counters.add(cc_0)
-    cc_1 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 513, 8))
+    cc_1 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 513, 8))
     counters.add(cc_1)
-    cc_2 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 514, 8))
+    cc_2 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 514, 8))
     counters.add(cc_2)
-    cc_3 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 517, 8))
+    cc_3 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 517, 8))
     counters.add(cc_3)
     states = []
     final_update = None
@@ -18421,7 +18421,7 @@ def _BuildAutomaton_18 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 545, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 545, 8))
     counters.add(cc_0)
     states = []
     final_update = set()
@@ -18446,7 +18446,7 @@ def _BuildAutomaton_19 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 565, 12))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 565, 12))
     counters.add(cc_0)
     states = []
     final_update = set()
@@ -18473,7 +18473,7 @@ def _BuildAutomaton_20 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 745, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 745, 8))
     counters.add(cc_0)
     states = []
     final_update = set()
@@ -18506,13 +18506,13 @@ def _BuildAutomaton_21 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 768, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 768, 8))
     counters.add(cc_0)
-    cc_1 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 769, 8))
+    cc_1 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 769, 8))
     counters.add(cc_1)
-    cc_2 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 770, 8))
+    cc_2 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 770, 8))
     counters.add(cc_2)
-    cc_3 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 771, 8))
+    cc_3 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 771, 8))
     counters.add(cc_3)
     states = []
     final_update = set()
@@ -18578,7 +18578,7 @@ def _BuildAutomaton_22 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 780, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 780, 8))
     counters.add(cc_0)
     states = []
     final_update = set()
@@ -18605,7 +18605,7 @@ def _BuildAutomaton_23 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 789, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 789, 8))
     counters.add(cc_0)
     states = []
     final_update = set()
@@ -18632,7 +18632,7 @@ def _BuildAutomaton_24 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 796, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 796, 8))
     counters.add(cc_0)
     states = []
     final_update = set()
@@ -18661,7 +18661,7 @@ def _BuildAutomaton_25 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 845, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 845, 8))
     counters.add(cc_0)
     states = []
     final_update = None
@@ -18697,7 +18697,7 @@ def _BuildAutomaton_26 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 853, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 853, 8))
     counters.add(cc_0)
     states = []
     final_update = set()
@@ -18726,7 +18726,7 @@ def _BuildAutomaton_27 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 862, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 862, 8))
     counters.add(cc_0)
     states = []
     final_update = None
@@ -18766,11 +18766,11 @@ def _BuildAutomaton_28 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 991, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 991, 8))
     counters.add(cc_0)
-    cc_1 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 992, 8))
+    cc_1 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 992, 8))
     counters.add(cc_1)
-    cc_2 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 993, 8))
+    cc_2 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 993, 8))
     counters.add(cc_2)
     states = []
     final_update = set()
@@ -18823,9 +18823,9 @@ def _BuildAutomaton_29 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1000, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1000, 8))
     counters.add(cc_0)
-    cc_1 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1001, 8))
+    cc_1 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1001, 8))
     counters.add(cc_1)
     states = []
     final_update = set()
@@ -18865,7 +18865,7 @@ def _BuildAutomaton_30 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1088, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1088, 8))
     counters.add(cc_0)
     states = []
     final_update = None
@@ -18899,7 +18899,7 @@ def _BuildAutomaton_31 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1394, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1394, 8))
     counters.add(cc_0)
     states = []
     final_update = set()
@@ -18930,9 +18930,9 @@ def _BuildAutomaton_32 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1540, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1540, 8))
     counters.add(cc_0)
-    cc_1 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1541, 8))
+    cc_1 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1541, 8))
     counters.add(cc_1)
     states = []
     final_update = None
@@ -18980,9 +18980,9 @@ def _BuildAutomaton_33 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1549, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1549, 8))
     counters.add(cc_0)
-    cc_1 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1550, 8))
+    cc_1 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1550, 8))
     counters.add(cc_1)
     states = []
     final_update = set()
@@ -19022,7 +19022,7 @@ def _BuildAutomaton_34 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1568, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1568, 8))
     counters.add(cc_0)
     states = []
     final_update = None
@@ -19056,7 +19056,7 @@ def _BuildAutomaton_35 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1747, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1747, 8))
     counters.add(cc_0)
     states = []
     final_update = set()
@@ -19083,7 +19083,7 @@ def _BuildAutomaton_36 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1754, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1754, 8))
     counters.add(cc_0)
     states = []
     final_update = set()
@@ -19112,7 +19112,7 @@ def _BuildAutomaton_37 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1934, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1934, 8))
     counters.add(cc_0)
     states = []
     final_update = None
@@ -19152,9 +19152,9 @@ def _BuildAutomaton_38 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1942, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1942, 8))
     counters.add(cc_0)
-    cc_1 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1943, 8))
+    cc_1 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1943, 8))
     counters.add(cc_1)
     states = []
     final_update = None
@@ -19204,7 +19204,7 @@ def _BuildAutomaton_39 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1952, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1952, 8))
     counters.add(cc_0)
     states = []
     final_update = None
@@ -19240,7 +19240,7 @@ def _BuildAutomaton_40 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1961, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1961, 8))
     counters.add(cc_0)
     states = []
     final_update = None
@@ -19276,7 +19276,7 @@ def _BuildAutomaton_41 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1970, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1970, 8))
     counters.add(cc_0)
     states = []
     final_update = None
@@ -19318,13 +19318,13 @@ def _BuildAutomaton_42 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1987, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1987, 8))
     counters.add(cc_0)
-    cc_1 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1989, 10))
+    cc_1 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1989, 10))
     counters.add(cc_1)
-    cc_2 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1990, 10))
+    cc_2 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1990, 10))
     counters.add(cc_2)
-    cc_3 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1992, 8))
+    cc_3 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1992, 8))
     counters.add(cc_3)
     states = []
     final_update = set()
@@ -19390,7 +19390,7 @@ def _BuildAutomaton_43 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2056, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2056, 8))
     counters.add(cc_0)
     states = []
     final_update = None
@@ -19426,7 +19426,7 @@ def _BuildAutomaton_44 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2064, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2064, 8))
     counters.add(cc_0)
     states = []
     final_update = None
@@ -19462,7 +19462,7 @@ def _BuildAutomaton_45 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2072, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2072, 8))
     counters.add(cc_0)
     states = []
     final_update = None
@@ -19504,11 +19504,11 @@ def _BuildAutomaton_46 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2080, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2080, 8))
     counters.add(cc_0)
-    cc_1 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2083, 8))
+    cc_1 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2083, 8))
     counters.add(cc_1)
-    cc_2 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2084, 8))
+    cc_2 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2084, 8))
     counters.add(cc_2)
     states = []
     final_update = None
@@ -19576,7 +19576,7 @@ def _BuildAutomaton_47 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2091, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2091, 8))
     counters.add(cc_0)
     states = []
     final_update = None
@@ -19612,7 +19612,7 @@ def _BuildAutomaton_48 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2099, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2099, 8))
     counters.add(cc_0)
     states = []
     final_update = None
@@ -19648,7 +19648,7 @@ def _BuildAutomaton_49 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2107, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2107, 8))
     counters.add(cc_0)
     states = []
     final_update = None
@@ -19684,7 +19684,7 @@ def _BuildAutomaton_50 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2115, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2115, 8))
     counters.add(cc_0)
     states = []
     final_update = None
@@ -19720,7 +19720,7 @@ def _BuildAutomaton_51 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2123, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2123, 8))
     counters.add(cc_0)
     states = []
     final_update = None
@@ -19760,9 +19760,9 @@ def _BuildAutomaton_52 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2135, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2135, 8))
     counters.add(cc_0)
-    cc_1 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2138, 8))
+    cc_1 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2138, 8))
     counters.add(cc_1)
     states = []
     final_update = None
@@ -19819,7 +19819,7 @@ def _BuildAutomaton_53 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2145, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2145, 8))
     counters.add(cc_0)
     states = []
     final_update = None
@@ -19863,7 +19863,7 @@ def _BuildAutomaton_54 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2154, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2154, 8))
     counters.add(cc_0)
     states = []
     final_update = None
@@ -19903,9 +19903,9 @@ def _BuildAutomaton_55 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2162, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2162, 8))
     counters.add(cc_0)
-    cc_1 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2165, 8))
+    cc_1 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2165, 8))
     counters.add(cc_1)
     states = []
     final_update = None
@@ -19960,7 +19960,7 @@ def _BuildAutomaton_56 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2172, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2172, 8))
     counters.add(cc_0)
     states = []
     final_update = None
@@ -19996,7 +19996,7 @@ def _BuildAutomaton_57 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2180, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2180, 8))
     counters.add(cc_0)
     states = []
     final_update = None
@@ -20032,7 +20032,7 @@ def _BuildAutomaton_58 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2188, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2188, 8))
     counters.add(cc_0)
     states = []
     final_update = None
@@ -20080,7 +20080,7 @@ def _BuildAutomaton_59 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2267, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2267, 8))
     counters.add(cc_0)
     states = []
     final_update = None
@@ -20190,11 +20190,11 @@ def _BuildAutomaton_60 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2276, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2276, 8))
     counters.add(cc_0)
-    cc_1 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2277, 8))
+    cc_1 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2277, 8))
     counters.add(cc_1)
-    cc_2 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2278, 8))
+    cc_2 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2278, 8))
     counters.add(cc_2)
     states = []
     final_update = set()
@@ -20247,9 +20247,9 @@ def _BuildAutomaton_61 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2340, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2340, 8))
     counters.add(cc_0)
-    cc_1 = fac.CounterCondition(min=0L, max=2L, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2341, 8))
+    cc_1 = fac.CounterCondition(min=0, max=2, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2341, 8))
     counters.add(cc_1)
     states = []
     final_update = set()
@@ -20289,7 +20289,7 @@ def _BuildAutomaton_62 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2365, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2365, 8))
     counters.add(cc_0)
     states = []
     final_update = None
@@ -20327,7 +20327,7 @@ def _BuildAutomaton_63 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2456, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2456, 8))
     counters.add(cc_0)
     states = []
     final_update = None
@@ -20365,9 +20365,9 @@ def _BuildAutomaton_64 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2567, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2567, 8))
     counters.add(cc_0)
-    cc_1 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2568, 8))
+    cc_1 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2568, 8))
     counters.add(cc_1)
     states = []
     final_update = set()
@@ -20407,9 +20407,9 @@ def _BuildAutomaton_65 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2585, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2585, 8))
     counters.add(cc_0)
-    cc_1 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2586, 8))
+    cc_1 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2586, 8))
     counters.add(cc_1)
     states = []
     final_update = set()
@@ -20449,9 +20449,9 @@ def _BuildAutomaton_66 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2593, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2593, 8))
     counters.add(cc_0)
-    cc_1 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2594, 8))
+    cc_1 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2594, 8))
     counters.add(cc_1)
     states = []
     final_update = set()
@@ -20491,7 +20491,7 @@ def _BuildAutomaton_67 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2612, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2612, 8))
     counters.add(cc_0)
     states = []
     final_update = None
@@ -20527,7 +20527,7 @@ def _BuildAutomaton_68 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2620, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2620, 8))
     counters.add(cc_0)
     states = []
     final_update = set()
@@ -20556,9 +20556,9 @@ def _BuildAutomaton_69 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2628, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2628, 8))
     counters.add(cc_0)
-    cc_1 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2629, 8))
+    cc_1 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2629, 8))
     counters.add(cc_1)
     states = []
     final_update = set()
@@ -20598,9 +20598,9 @@ def _BuildAutomaton_70 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2676, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2676, 8))
     counters.add(cc_0)
-    cc_1 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2677, 8))
+    cc_1 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2677, 8))
     counters.add(cc_1)
     states = []
     final_update = set()
@@ -20642,11 +20642,11 @@ def _BuildAutomaton_71 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2727, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2727, 8))
     counters.add(cc_0)
-    cc_1 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2728, 8))
+    cc_1 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2728, 8))
     counters.add(cc_1)
-    cc_2 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2729, 8))
+    cc_2 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2729, 8))
     counters.add(cc_2)
     states = []
     final_update = set()
@@ -20701,9 +20701,9 @@ def _BuildAutomaton_72 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2759, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2759, 8))
     counters.add(cc_0)
-    cc_1 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2761, 8))
+    cc_1 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2761, 8))
     counters.add(cc_1)
     states = []
     final_update = None
@@ -20752,7 +20752,7 @@ def _BuildAutomaton_73 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2858, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2858, 8))
     counters.add(cc_0)
     states = []
     final_update = None
@@ -20790,7 +20790,7 @@ def _BuildAutomaton_74 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2935, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2935, 8))
     counters.add(cc_0)
     states = []
     final_update = None
@@ -20826,7 +20826,7 @@ def _BuildAutomaton_75 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2945, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2945, 8))
     counters.add(cc_0)
     states = []
     final_update = set()
@@ -20855,7 +20855,7 @@ def _BuildAutomaton_76 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2968, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2968, 8))
     counters.add(cc_0)
     states = []
     final_update = None
@@ -20891,7 +20891,7 @@ def _BuildAutomaton_77 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2999, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2999, 8))
     counters.add(cc_0)
     states = []
     final_update = set()
@@ -20920,9 +20920,9 @@ def _BuildAutomaton_78 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 3006, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 3006, 8))
     counters.add(cc_0)
-    cc_1 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 3007, 8))
+    cc_1 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 3007, 8))
     counters.add(cc_1)
     states = []
     final_update = set()
@@ -20958,7 +20958,7 @@ def _BuildAutomaton_79 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=2L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 3016, 12))
+    cc_0 = fac.CounterCondition(min=2, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 3016, 12))
     counters.add(cc_0)
     states = []
     final_update = set()
@@ -20999,9 +20999,9 @@ def _BuildAutomaton_80 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 3089, 6))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 3089, 6))
     counters.add(cc_0)
-    cc_1 = fac.CounterCondition(min=2L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 3131, 6))
+    cc_1 = fac.CounterCondition(min=2, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 3131, 6))
     counters.add(cc_1)
     states = []
     final_update = set()
@@ -21089,7 +21089,7 @@ def _BuildAutomaton_81 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 3089, 6))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 3089, 6))
     counters.add(cc_0)
     states = []
     final_update = set()
@@ -21150,7 +21150,7 @@ def _BuildAutomaton_82 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 3200, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 3200, 8))
     counters.add(cc_0)
     states = []
     final_update = None
@@ -21188,7 +21188,7 @@ def _BuildAutomaton_83 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 3223, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 3223, 8))
     counters.add(cc_0)
     states = []
     final_update = None
@@ -21226,7 +21226,7 @@ def _BuildAutomaton_84 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 3343, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 3343, 8))
     counters.add(cc_0)
     states = []
     final_update = None
@@ -21282,23 +21282,23 @@ def _BuildAutomaton_85 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 5, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 5, 8))
     counters.add(cc_0)
-    cc_1 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 7, 8))
+    cc_1 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 7, 8))
     counters.add(cc_1)
-    cc_2 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 8, 8))
+    cc_2 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 8, 8))
     counters.add(cc_2)
-    cc_3 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 9, 8))
+    cc_3 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 9, 8))
     counters.add(cc_3)
-    cc_4 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 10, 8))
+    cc_4 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 10, 8))
     counters.add(cc_4)
-    cc_5 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 12, 8))
+    cc_5 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 12, 8))
     counters.add(cc_5)
-    cc_6 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 13, 8))
+    cc_6 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 13, 8))
     counters.add(cc_6)
-    cc_7 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 15, 8))
+    cc_7 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 15, 8))
     counters.add(cc_7)
-    cc_8 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 16, 8))
+    cc_8 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 16, 8))
     counters.add(cc_8)
     states = []
     final_update = None
@@ -21462,9 +21462,9 @@ def _BuildAutomaton_86 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 76, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 76, 8))
     counters.add(cc_0)
-    cc_1 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 77, 8))
+    cc_1 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 77, 8))
     counters.add(cc_1)
     states = []
     final_update = set()
@@ -21520,7 +21520,7 @@ def _BuildAutomaton_87 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 113, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 113, 8))
     counters.add(cc_0)
     states = []
     final_update = None
@@ -21618,7 +21618,7 @@ def _BuildAutomaton_88 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 170, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 170, 8))
     counters.add(cc_0)
     states = []
     final_update = set()
@@ -21645,7 +21645,7 @@ def _BuildAutomaton_89 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 199, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 199, 8))
     counters.add(cc_0)
     states = []
     final_update = set()
@@ -21676,7 +21676,7 @@ def _BuildAutomaton_90 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 214, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 214, 8))
     counters.add(cc_0)
     states = []
     final_update = None
@@ -21736,7 +21736,7 @@ def _BuildAutomaton_91 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 244, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 244, 8))
     counters.add(cc_0)
     states = []
     final_update = None
@@ -21852,9 +21852,9 @@ def _BuildAutomaton_92 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 263, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 263, 8))
     counters.add(cc_0)
-    cc_1 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 264, 8))
+    cc_1 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 264, 8))
     counters.add(cc_1)
     states = []
     final_update = set()
@@ -22081,7 +22081,7 @@ def _BuildAutomaton_93 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 282, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 282, 8))
     counters.add(cc_0)
     states = []
     final_update = set()
@@ -22126,23 +22126,23 @@ def _BuildAutomaton_94 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 333, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 333, 8))
     counters.add(cc_0)
-    cc_1 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 335, 8))
+    cc_1 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 335, 8))
     counters.add(cc_1)
-    cc_2 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 336, 8))
+    cc_2 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 336, 8))
     counters.add(cc_2)
-    cc_3 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 337, 8))
+    cc_3 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 337, 8))
     counters.add(cc_3)
-    cc_4 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 338, 8))
+    cc_4 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 338, 8))
     counters.add(cc_4)
-    cc_5 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 339, 8))
+    cc_5 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 339, 8))
     counters.add(cc_5)
-    cc_6 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 340, 8))
+    cc_6 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 340, 8))
     counters.add(cc_6)
-    cc_7 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 342, 8))
+    cc_7 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 342, 8))
     counters.add(cc_7)
-    cc_8 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 343, 8))
+    cc_8 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 343, 8))
     counters.add(cc_8)
     states = []
     final_update = None
@@ -22312,7 +22312,7 @@ def _BuildAutomaton_95 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 360, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 360, 8))
     counters.add(cc_0)
     states = []
     final_update = set()
@@ -22341,7 +22341,7 @@ def _BuildAutomaton_96 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 385, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 385, 8))
     counters.add(cc_0)
     states = []
     final_update = None
@@ -22375,7 +22375,7 @@ def _BuildAutomaton_97 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 409, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 409, 8))
     counters.add(cc_0)
     states = []
     final_update = set()
@@ -22402,7 +22402,7 @@ def _BuildAutomaton_98 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 418, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 418, 8))
     counters.add(cc_0)
     states = []
     final_update = set()
@@ -22435,15 +22435,15 @@ def _BuildAutomaton_99 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 437, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 437, 8))
     counters.add(cc_0)
-    cc_1 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 439, 8))
+    cc_1 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 439, 8))
     counters.add(cc_1)
-    cc_2 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 428, 6))
+    cc_2 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 428, 6))
     counters.add(cc_2)
-    cc_3 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 430, 6))
+    cc_3 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 430, 6))
     counters.add(cc_3)
-    cc_4 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 442, 8))
+    cc_4 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 442, 8))
     counters.add(cc_4)
     states = []
     final_update = None
@@ -22535,7 +22535,7 @@ def _BuildAutomaton_100 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 453, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 453, 8))
     counters.add(cc_0)
     states = []
     final_update = set()
@@ -22570,11 +22570,11 @@ def _BuildAutomaton_101 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 461, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 461, 8))
     counters.add(cc_0)
-    cc_1 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 464, 8))
+    cc_1 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 464, 8))
     counters.add(cc_1)
-    cc_2 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 466, 8))
+    cc_2 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 466, 8))
     counters.add(cc_2)
     states = []
     final_update = None
@@ -22647,7 +22647,7 @@ def _BuildAutomaton_102 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 488, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 488, 8))
     counters.add(cc_0)
     states = []
     final_update = set()
@@ -22690,9 +22690,9 @@ def _BuildAutomaton_104 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 628, 8))
+    cc_0 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 628, 8))
     counters.add(cc_0)
-    cc_1 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 629, 8))
+    cc_1 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 629, 8))
     counters.add(cc_1)
     states = []
     final_update = set()
@@ -22732,9 +22732,9 @@ def _BuildAutomaton_105 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 638, 8))
+    cc_0 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 638, 8))
     counters.add(cc_0)
-    cc_1 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 639, 8))
+    cc_1 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 639, 8))
     counters.add(cc_1)
     states = []
     final_update = set()
@@ -22774,7 +22774,7 @@ def _BuildAutomaton_106 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 662, 6))
+    cc_0 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 662, 6))
     counters.add(cc_0)
     states = []
     final_update = set()
@@ -22834,23 +22834,23 @@ def _BuildAutomaton_107 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 694, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 694, 8))
     counters.add(cc_0)
-    cc_1 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 696, 8))
+    cc_1 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 696, 8))
     counters.add(cc_1)
-    cc_2 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 697, 8))
+    cc_2 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 697, 8))
     counters.add(cc_2)
-    cc_3 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 698, 8))
+    cc_3 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 698, 8))
     counters.add(cc_3)
-    cc_4 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 699, 8))
+    cc_4 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 699, 8))
     counters.add(cc_4)
-    cc_5 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 700, 8))
+    cc_5 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 700, 8))
     counters.add(cc_5)
-    cc_6 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 701, 8))
+    cc_6 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 701, 8))
     counters.add(cc_6)
-    cc_7 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 702, 8))
+    cc_7 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 702, 8))
     counters.add(cc_7)
-    cc_8 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 703, 8))
+    cc_8 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 703, 8))
     counters.add(cc_8)
     states = []
     final_update = None
@@ -23028,7 +23028,7 @@ def _BuildAutomaton_108 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 723, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 723, 8))
     counters.add(cc_0)
     states = []
     final_update = set()
@@ -23057,9 +23057,9 @@ def _BuildAutomaton_109 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 734, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 734, 8))
     counters.add(cc_0)
-    cc_1 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 735, 8))
+    cc_1 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 735, 8))
     counters.add(cc_1)
     states = []
     final_update = set()
@@ -23097,7 +23097,7 @@ def _BuildAutomaton_110 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 753, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 753, 8))
     counters.add(cc_0)
     states = []
     final_update = set()
@@ -23144,21 +23144,21 @@ def _BuildAutomaton_111 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 803, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 803, 8))
     counters.add(cc_0)
-    cc_1 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 805, 8))
+    cc_1 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 805, 8))
     counters.add(cc_1)
-    cc_2 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 806, 8))
+    cc_2 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 806, 8))
     counters.add(cc_2)
-    cc_3 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 807, 8))
+    cc_3 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 807, 8))
     counters.add(cc_3)
-    cc_4 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 808, 8))
+    cc_4 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 808, 8))
     counters.add(cc_4)
-    cc_5 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 809, 8))
+    cc_5 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 809, 8))
     counters.add(cc_5)
-    cc_6 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 813, 8))
+    cc_6 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 813, 8))
     counters.add(cc_6)
-    cc_7 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 814, 8))
+    cc_7 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 814, 8))
     counters.add(cc_7)
     states = []
     final_update = None
@@ -23326,7 +23326,7 @@ def _BuildAutomaton_112 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 830, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 830, 8))
     counters.add(cc_0)
     states = []
     final_update = None
@@ -23376,7 +23376,7 @@ def _BuildAutomaton_113 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 870, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 870, 8))
     counters.add(cc_0)
     states = []
     final_update = set()
@@ -23419,21 +23419,21 @@ def _BuildAutomaton_114 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 893, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 893, 8))
     counters.add(cc_0)
-    cc_1 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 895, 8))
+    cc_1 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 895, 8))
     counters.add(cc_1)
-    cc_2 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 896, 8))
+    cc_2 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 896, 8))
     counters.add(cc_2)
-    cc_3 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 897, 8))
+    cc_3 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 897, 8))
     counters.add(cc_3)
-    cc_4 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 898, 8))
+    cc_4 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 898, 8))
     counters.add(cc_4)
-    cc_5 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 899, 8))
+    cc_5 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 899, 8))
     counters.add(cc_5)
-    cc_6 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 901, 8))
+    cc_6 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 901, 8))
     counters.add(cc_6)
-    cc_7 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 902, 8))
+    cc_7 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 902, 8))
     counters.add(cc_7)
     states = []
     final_update = None
@@ -23587,13 +23587,13 @@ def _BuildAutomaton_115 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 937, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 937, 8))
     counters.add(cc_0)
-    cc_1 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 938, 8))
+    cc_1 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 938, 8))
     counters.add(cc_1)
-    cc_2 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 939, 8))
+    cc_2 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 939, 8))
     counters.add(cc_2)
-    cc_3 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 940, 8))
+    cc_3 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 940, 8))
     counters.add(cc_3)
     states = []
     final_update = set()
@@ -23659,7 +23659,7 @@ def _BuildAutomaton_116 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 949, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 949, 8))
     counters.add(cc_0)
     states = []
     final_update = set()
@@ -23686,7 +23686,7 @@ def _BuildAutomaton_117 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 959, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 959, 8))
     counters.add(cc_0)
     states = []
     final_update = set()
@@ -23715,7 +23715,7 @@ def _BuildAutomaton_118 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 969, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 969, 8))
     counters.add(cc_0)
     states = []
     final_update = None
@@ -23769,9 +23769,9 @@ def _BuildAutomaton_119 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1008, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1008, 8))
     counters.add(cc_0)
-    cc_1 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1010, 8))
+    cc_1 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1010, 8))
     counters.add(cc_1)
     states = []
     final_update = None
@@ -23886,7 +23886,7 @@ def _BuildAutomaton_120 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1030, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1030, 8))
     counters.add(cc_0)
     states = []
     final_update = set()
@@ -23915,9 +23915,9 @@ def _BuildAutomaton_121 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1039, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1039, 8))
     counters.add(cc_0)
-    cc_1 = fac.CounterCondition(min=2L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1040, 8))
+    cc_1 = fac.CounterCondition(min=2, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1040, 8))
     counters.add(cc_1)
     states = []
     final_update = None
@@ -23954,7 +23954,7 @@ def _BuildAutomaton_122 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1050, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1050, 8))
     counters.add(cc_0)
     states = []
     final_update = set()
@@ -23981,7 +23981,7 @@ def _BuildAutomaton_123 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1059, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1059, 8))
     counters.add(cc_0)
     states = []
     final_update = set()
@@ -24010,9 +24010,9 @@ def _BuildAutomaton_124 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1076, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1076, 8))
     counters.add(cc_0)
-    cc_1 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1077, 8))
+    cc_1 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1077, 8))
     counters.add(cc_1)
     states = []
     final_update = set()
@@ -24056,9 +24056,9 @@ def _BuildAutomaton_125 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1097, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1097, 8))
     counters.add(cc_0)
-    cc_1 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1099, 8))
+    cc_1 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1099, 8))
     counters.add(cc_1)
     states = []
     final_update = None
@@ -24120,7 +24120,7 @@ def _BuildAutomaton_126 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1113, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1113, 8))
     counters.add(cc_0)
     states = []
     final_update = set()
@@ -24147,7 +24147,7 @@ def _BuildAutomaton_127 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1122, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1122, 8))
     counters.add(cc_0)
     states = []
     final_update = set()
@@ -24196,29 +24196,29 @@ def _BuildAutomaton_128 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1144, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1144, 8))
     counters.add(cc_0)
-    cc_1 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1146, 8))
+    cc_1 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1146, 8))
     counters.add(cc_1)
-    cc_2 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1147, 8))
+    cc_2 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1147, 8))
     counters.add(cc_2)
-    cc_3 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1148, 8))
+    cc_3 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1148, 8))
     counters.add(cc_3)
-    cc_4 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1149, 8))
+    cc_4 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1149, 8))
     counters.add(cc_4)
-    cc_5 = fac.CounterCondition(min=0L, max=3L, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1150, 8))
+    cc_5 = fac.CounterCondition(min=0, max=3, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1150, 8))
     counters.add(cc_5)
-    cc_6 = fac.CounterCondition(min=0L, max=1L, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1151, 8))
+    cc_6 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1151, 8))
     counters.add(cc_6)
-    cc_7 = fac.CounterCondition(min=0L, max=1L, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1152, 8))
+    cc_7 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1152, 8))
     counters.add(cc_7)
-    cc_8 = fac.CounterCondition(min=0L, max=1L, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1153, 8))
+    cc_8 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1153, 8))
     counters.add(cc_8)
-    cc_9 = fac.CounterCondition(min=0L, max=1L, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1154, 8))
+    cc_9 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1154, 8))
     counters.add(cc_9)
-    cc_10 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1155, 8))
+    cc_10 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1155, 8))
     counters.add(cc_10)
-    cc_11 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1156, 8))
+    cc_11 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1156, 8))
     counters.add(cc_11)
     states = []
     final_update = None
@@ -24485,9 +24485,9 @@ def _BuildAutomaton_129 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=1L, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1176, 8))
+    cc_0 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1176, 8))
     counters.add(cc_0)
-    cc_1 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1177, 8))
+    cc_1 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1177, 8))
     counters.add(cc_1)
     states = []
     final_update = set()
@@ -24525,7 +24525,7 @@ def _BuildAutomaton_130 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=1L, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1195, 8))
+    cc_0 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1195, 8))
     counters.add(cc_0)
     states = []
     final_update = set()
@@ -24554,9 +24554,9 @@ def _BuildAutomaton_131 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1206, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1206, 8))
     counters.add(cc_0)
-    cc_1 = fac.CounterCondition(min=0L, max=2L, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1207, 8))
+    cc_1 = fac.CounterCondition(min=0, max=2, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1207, 8))
     counters.add(cc_1)
     states = []
     final_update = set()
@@ -24594,7 +24594,7 @@ def _BuildAutomaton_132 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=1L, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1218, 8))
+    cc_0 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1218, 8))
     counters.add(cc_0)
     states = []
     final_update = set()
@@ -24649,11 +24649,11 @@ def _BuildAutomaton_134 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=1L, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1282, 8))
+    cc_0 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1282, 8))
     counters.add(cc_0)
-    cc_1 = fac.CounterCondition(min=0L, max=1L, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1283, 8))
+    cc_1 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1283, 8))
     counters.add(cc_1)
-    cc_2 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1284, 8))
+    cc_2 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1284, 8))
     counters.add(cc_2)
     states = []
     final_update = set()
@@ -24716,7 +24716,7 @@ def _BuildAutomaton_135 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1307, 8))
+    cc_0 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1307, 8))
     counters.add(cc_0)
     states = []
     final_update = set()
@@ -24791,21 +24791,21 @@ def _BuildAutomaton_137 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1350, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1350, 8))
     counters.add(cc_0)
-    cc_1 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1352, 8))
+    cc_1 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1352, 8))
     counters.add(cc_1)
-    cc_2 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1353, 8))
+    cc_2 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1353, 8))
     counters.add(cc_2)
-    cc_3 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1354, 8))
+    cc_3 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1354, 8))
     counters.add(cc_3)
-    cc_4 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1355, 8))
+    cc_4 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1355, 8))
     counters.add(cc_4)
-    cc_5 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1356, 8))
+    cc_5 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1356, 8))
     counters.add(cc_5)
-    cc_6 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1367, 8))
+    cc_6 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1367, 8))
     counters.add(cc_6)
-    cc_7 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1368, 8))
+    cc_7 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1368, 8))
     counters.add(cc_7)
     states = []
     final_update = None
@@ -25029,7 +25029,7 @@ def _BuildAutomaton_138 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1402, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1402, 8))
     counters.add(cc_0)
     states = []
     final_update = set()
@@ -25056,7 +25056,7 @@ def _BuildAutomaton_139 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1413, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1413, 8))
     counters.add(cc_0)
     states = []
     final_update = set()
@@ -25083,7 +25083,7 @@ def _BuildAutomaton_140 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1422, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1422, 8))
     counters.add(cc_0)
     states = []
     final_update = set()
@@ -25114,9 +25114,9 @@ def _BuildAutomaton_141 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1435, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1435, 8))
     counters.add(cc_0)
-    cc_1 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1437, 8))
+    cc_1 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1437, 8))
     counters.add(cc_1)
     states = []
     final_update = None
@@ -25163,7 +25163,7 @@ def _BuildAutomaton_142 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1445, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1445, 8))
     counters.add(cc_0)
     states = []
     final_update = None
@@ -25203,7 +25203,7 @@ def _BuildAutomaton_143 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1454, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1454, 8))
     counters.add(cc_0)
     states = []
     final_update = None
@@ -25249,9 +25249,9 @@ def _BuildAutomaton_144 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1466, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1466, 8))
     counters.add(cc_0)
-    cc_1 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1467, 8))
+    cc_1 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1467, 8))
     counters.add(cc_1)
     states = []
     final_update = None
@@ -25299,7 +25299,7 @@ def _BuildAutomaton_145 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1478, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1478, 8))
     counters.add(cc_0)
     states = []
     final_update = None
@@ -25335,7 +25335,7 @@ def _BuildAutomaton_146 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1488, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1488, 8))
     counters.add(cc_0)
     states = []
     final_update = set()
@@ -25364,7 +25364,7 @@ def _BuildAutomaton_147 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1496, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1496, 8))
     counters.add(cc_0)
     states = []
     final_update = None
@@ -25400,7 +25400,7 @@ def _BuildAutomaton_148 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1506, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1506, 8))
     counters.add(cc_0)
     states = []
     final_update = set()
@@ -25451,25 +25451,25 @@ def _BuildAutomaton_149 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1514, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1514, 8))
     counters.add(cc_0)
-    cc_1 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1516, 8))
+    cc_1 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1516, 8))
     counters.add(cc_1)
-    cc_2 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1517, 8))
+    cc_2 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1517, 8))
     counters.add(cc_2)
-    cc_3 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1518, 8))
+    cc_3 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1518, 8))
     counters.add(cc_3)
-    cc_4 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1519, 8))
+    cc_4 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1519, 8))
     counters.add(cc_4)
-    cc_5 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1520, 8))
+    cc_5 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1520, 8))
     counters.add(cc_5)
-    cc_6 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1524, 8))
+    cc_6 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1524, 8))
     counters.add(cc_6)
-    cc_7 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1525, 8))
+    cc_7 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1525, 8))
     counters.add(cc_7)
-    cc_8 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1526, 8))
+    cc_8 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1526, 8))
     counters.add(cc_8)
-    cc_9 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1527, 8))
+    cc_9 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1527, 8))
     counters.add(cc_9)
     states = []
     final_update = None
@@ -25663,7 +25663,7 @@ def _BuildAutomaton_150 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1557, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1557, 8))
     counters.add(cc_0)
     states = []
     final_update = set()
@@ -25690,7 +25690,7 @@ def _BuildAutomaton_151 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1576, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1576, 8))
     counters.add(cc_0)
     states = []
     final_update = set()
@@ -25717,7 +25717,7 @@ def _BuildAutomaton_152 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1612, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1612, 8))
     counters.add(cc_0)
     states = []
     final_update = set()
@@ -25760,21 +25760,21 @@ def _BuildAutomaton_153 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1627, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1627, 8))
     counters.add(cc_0)
-    cc_1 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1629, 8))
+    cc_1 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1629, 8))
     counters.add(cc_1)
-    cc_2 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1630, 8))
+    cc_2 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1630, 8))
     counters.add(cc_2)
-    cc_3 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1631, 8))
+    cc_3 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1631, 8))
     counters.add(cc_3)
-    cc_4 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1632, 8))
+    cc_4 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1632, 8))
     counters.add(cc_4)
-    cc_5 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1633, 8))
+    cc_5 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1633, 8))
     counters.add(cc_5)
-    cc_6 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1635, 8))
+    cc_6 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1635, 8))
     counters.add(cc_6)
-    cc_7 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1636, 8))
+    cc_7 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1636, 8))
     counters.add(cc_7)
     states = []
     final_update = None
@@ -25940,15 +25940,15 @@ def _BuildAutomaton_154 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1658, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1658, 8))
     counters.add(cc_0)
-    cc_1 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1662, 12))
+    cc_1 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1662, 12))
     counters.add(cc_1)
-    cc_2 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1663, 12))
+    cc_2 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1663, 12))
     counters.add(cc_2)
-    cc_3 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1664, 12))
+    cc_3 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1664, 12))
     counters.add(cc_3)
-    cc_4 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1845, 6))
+    cc_4 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1845, 6))
     counters.add(cc_4)
     states = []
     final_update = None
@@ -26131,7 +26131,7 @@ def _BuildAutomaton_155 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1687, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1687, 8))
     counters.add(cc_0)
     states = []
     final_update = set()
@@ -26168,9 +26168,9 @@ def _BuildAutomaton_156 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1710, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1710, 8))
     counters.add(cc_0)
-    cc_1 = fac.CounterCondition(min=2L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1711, 8))
+    cc_1 = fac.CounterCondition(min=2, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1711, 8))
     counters.add(cc_1)
     states = []
     final_update = None
@@ -26293,7 +26293,7 @@ def _BuildAutomaton_157 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1730, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1730, 8))
     counters.add(cc_0)
     states = []
     final_update = None
@@ -26327,7 +26327,7 @@ def _BuildAutomaton_158 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1761, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1761, 8))
     counters.add(cc_0)
     states = []
     final_update = set()
@@ -26374,25 +26374,25 @@ def _BuildAutomaton_159 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1788, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1788, 8))
     counters.add(cc_0)
-    cc_1 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1790, 8))
+    cc_1 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1790, 8))
     counters.add(cc_1)
-    cc_2 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1791, 8))
+    cc_2 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1791, 8))
     counters.add(cc_2)
-    cc_3 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1792, 8))
+    cc_3 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1792, 8))
     counters.add(cc_3)
-    cc_4 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1793, 8))
+    cc_4 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1793, 8))
     counters.add(cc_4)
-    cc_5 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1794, 8))
+    cc_5 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1794, 8))
     counters.add(cc_5)
-    cc_6 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1795, 8))
+    cc_6 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1795, 8))
     counters.add(cc_6)
-    cc_7 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1799, 8))
+    cc_7 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1799, 8))
     counters.add(cc_7)
-    cc_8 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1800, 8))
+    cc_8 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1800, 8))
     counters.add(cc_8)
-    cc_9 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1801, 8))
+    cc_9 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1801, 8))
     counters.add(cc_9)
     states = []
     final_update = None
@@ -26630,7 +26630,7 @@ def _BuildAutomaton_160 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1812, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1812, 8))
     counters.add(cc_0)
     states = []
     final_update = None
@@ -26708,7 +26708,7 @@ def _BuildAutomaton_161 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1821, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1821, 8))
     counters.add(cc_0)
     states = []
     final_update = None
@@ -27030,7 +27030,7 @@ def _BuildAutomaton_162 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1855, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1855, 8))
     counters.add(cc_0)
     states = []
     final_update = set()
@@ -27069,17 +27069,17 @@ def _BuildAutomaton_163 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1868, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1868, 8))
     counters.add(cc_0)
-    cc_1 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1869, 8))
+    cc_1 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1869, 8))
     counters.add(cc_1)
-    cc_2 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1870, 8))
+    cc_2 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1870, 8))
     counters.add(cc_2)
-    cc_3 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1871, 8))
+    cc_3 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1871, 8))
     counters.add(cc_3)
-    cc_4 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1872, 8))
+    cc_4 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1872, 8))
     counters.add(cc_4)
-    cc_5 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1873, 8))
+    cc_5 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1873, 8))
     counters.add(cc_5)
     states = []
     final_update = None
@@ -27207,17 +27207,17 @@ def _BuildAutomaton_164 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1885, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1885, 8))
     counters.add(cc_0)
-    cc_1 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1886, 8))
+    cc_1 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1886, 8))
     counters.add(cc_1)
-    cc_2 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1887, 8))
+    cc_2 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1887, 8))
     counters.add(cc_2)
-    cc_3 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1888, 8))
+    cc_3 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1888, 8))
     counters.add(cc_3)
-    cc_4 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1889, 8))
+    cc_4 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1889, 8))
     counters.add(cc_4)
-    cc_5 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1890, 8))
+    cc_5 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1890, 8))
     counters.add(cc_5)
     states = []
     final_update = None
@@ -27349,21 +27349,21 @@ def _BuildAutomaton_165 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1912, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1912, 8))
     counters.add(cc_0)
-    cc_1 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1914, 8))
+    cc_1 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1914, 8))
     counters.add(cc_1)
-    cc_2 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1915, 8))
+    cc_2 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1915, 8))
     counters.add(cc_2)
-    cc_3 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1916, 8))
+    cc_3 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1916, 8))
     counters.add(cc_3)
-    cc_4 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1917, 8))
+    cc_4 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1917, 8))
     counters.add(cc_4)
-    cc_5 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1918, 8))
+    cc_5 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1918, 8))
     counters.add(cc_5)
-    cc_6 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1921, 8))
+    cc_6 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1921, 8))
     counters.add(cc_6)
-    cc_7 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1922, 8))
+    cc_7 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1922, 8))
     counters.add(cc_7)
     states = []
     final_update = None
@@ -27517,7 +27517,7 @@ def _BuildAutomaton_166 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1978, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1978, 8))
     counters.add(cc_0)
     states = []
     final_update = set()
@@ -27550,13 +27550,13 @@ def _BuildAutomaton_167 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1999, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 1999, 8))
     counters.add(cc_0)
-    cc_1 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2000, 8))
+    cc_1 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2000, 8))
     counters.add(cc_1)
-    cc_2 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2001, 8))
+    cc_2 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2001, 8))
     counters.add(cc_2)
-    cc_3 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2002, 8))
+    cc_3 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2002, 8))
     counters.add(cc_3)
     states = []
     final_update = set()
@@ -27628,11 +27628,11 @@ def _BuildAutomaton_168 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2043, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2043, 8))
     counters.add(cc_0)
-    cc_1 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2045, 8))
+    cc_1 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2045, 8))
     counters.add(cc_1)
-    cc_2 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2046, 8))
+    cc_2 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2046, 8))
     counters.add(cc_2)
     states = []
     final_update = None
@@ -27706,21 +27706,21 @@ def _BuildAutomaton_169 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2196, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2196, 8))
     counters.add(cc_0)
-    cc_1 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2198, 8))
+    cc_1 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2198, 8))
     counters.add(cc_1)
-    cc_2 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2199, 8))
+    cc_2 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2199, 8))
     counters.add(cc_2)
-    cc_3 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2200, 8))
+    cc_3 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2200, 8))
     counters.add(cc_3)
-    cc_4 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2201, 8))
+    cc_4 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2201, 8))
     counters.add(cc_4)
-    cc_5 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2202, 8))
+    cc_5 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2202, 8))
     counters.add(cc_5)
-    cc_6 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2204, 8))
+    cc_6 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2204, 8))
     counters.add(cc_6)
-    cc_7 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2205, 8))
+    cc_7 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2205, 8))
     counters.add(cc_7)
     states = []
     final_update = None
@@ -27874,11 +27874,11 @@ def _BuildAutomaton_170 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2216, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2216, 8))
     counters.add(cc_0)
-    cc_1 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2218, 8))
+    cc_1 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2218, 8))
     counters.add(cc_1)
-    cc_2 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2219, 8))
+    cc_2 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2219, 8))
     counters.add(cc_2)
     states = []
     final_update = None
@@ -27955,7 +27955,7 @@ def _BuildAutomaton_171 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2230, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2230, 8))
     counters.add(cc_0)
     states = []
     final_update = set()
@@ -27994,9 +27994,9 @@ def _BuildAutomaton_172 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2252, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2252, 8))
     counters.add(cc_0)
-    cc_1 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2254, 8))
+    cc_1 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2254, 8))
     counters.add(cc_1)
     states = []
     final_update = None
@@ -28091,17 +28091,17 @@ def _BuildAutomaton_173 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2285, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2285, 8))
     counters.add(cc_0)
-    cc_1 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2286, 8))
+    cc_1 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2286, 8))
     counters.add(cc_1)
-    cc_2 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2287, 8))
+    cc_2 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2287, 8))
     counters.add(cc_2)
-    cc_3 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2288, 8))
+    cc_3 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2288, 8))
     counters.add(cc_3)
-    cc_4 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2289, 8))
+    cc_4 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2289, 8))
     counters.add(cc_4)
-    cc_5 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2290, 8))
+    cc_5 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2290, 8))
     counters.add(cc_5)
     states = []
     final_update = set()
@@ -28203,7 +28203,7 @@ def _BuildAutomaton_174 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2306, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2306, 8))
     counters.add(cc_0)
     states = []
     final_update = set()
@@ -28232,9 +28232,9 @@ def _BuildAutomaton_175 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2317, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2317, 8))
     counters.add(cc_0)
-    cc_1 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2318, 8))
+    cc_1 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2318, 8))
     counters.add(cc_1)
     states = []
     final_update = set()
@@ -28272,7 +28272,7 @@ def _BuildAutomaton_176 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2331, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2331, 8))
     counters.add(cc_0)
     states = []
     final_update = set()
@@ -28303,13 +28303,13 @@ def _BuildAutomaton_177 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2349, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2349, 8))
     counters.add(cc_0)
-    cc_1 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2350, 8))
+    cc_1 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2350, 8))
     counters.add(cc_1)
-    cc_2 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2351, 8))
+    cc_2 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2351, 8))
     counters.add(cc_2)
-    cc_3 = fac.CounterCondition(min=1L, max=3L, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2359, 6))
+    cc_3 = fac.CounterCondition(min=1, max=3, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2359, 6))
     counters.add(cc_3)
     states = []
     final_update = set()
@@ -28364,7 +28364,7 @@ def _BuildAutomaton_178 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2374, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2374, 8))
     counters.add(cc_0)
     states = []
     final_update = set()
@@ -28393,9 +28393,9 @@ def _BuildAutomaton_179 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2397, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2397, 8))
     counters.add(cc_0)
-    cc_1 = fac.CounterCondition(min=3L, max=3L, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2398, 8))
+    cc_1 = fac.CounterCondition(min=3, max=3, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2398, 8))
     counters.add(cc_1)
     states = []
     final_update = None
@@ -28432,7 +28432,7 @@ def _BuildAutomaton_180 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2406, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2406, 8))
     counters.add(cc_0)
     states = []
     final_update = set()
@@ -28461,9 +28461,9 @@ def _BuildAutomaton_181 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2427, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2427, 8))
     counters.add(cc_0)
-    cc_1 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2428, 8))
+    cc_1 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2428, 8))
     counters.add(cc_1)
     states = []
     final_update = set()
@@ -28507,15 +28507,15 @@ def _BuildAutomaton_182 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2437, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2437, 8))
     counters.add(cc_0)
-    cc_1 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2438, 8))
+    cc_1 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2438, 8))
     counters.add(cc_1)
-    cc_2 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2439, 8))
+    cc_2 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2439, 8))
     counters.add(cc_2)
-    cc_3 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2440, 8))
+    cc_3 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2440, 8))
     counters.add(cc_3)
-    cc_4 = fac.CounterCondition(min=1L, max=3L, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2359, 6))
+    cc_4 = fac.CounterCondition(min=1, max=3, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2359, 6))
     counters.add(cc_4)
     states = []
     final_update = set()
@@ -28587,9 +28587,9 @@ def _BuildAutomaton_183 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2464, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2464, 8))
     counters.add(cc_0)
-    cc_1 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2465, 8))
+    cc_1 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2465, 8))
     counters.add(cc_1)
     states = []
     final_update = set()
@@ -28629,9 +28629,9 @@ def _BuildAutomaton_184 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2487, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2487, 8))
     counters.add(cc_0)
-    cc_1 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2488, 8))
+    cc_1 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2488, 8))
     counters.add(cc_1)
     states = []
     final_update = set()
@@ -28699,31 +28699,31 @@ def _BuildAutomaton_185 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2499, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2499, 8))
     counters.add(cc_0)
-    cc_1 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2501, 8))
+    cc_1 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2501, 8))
     counters.add(cc_1)
-    cc_2 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2502, 8))
+    cc_2 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2502, 8))
     counters.add(cc_2)
-    cc_3 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2503, 8))
+    cc_3 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2503, 8))
     counters.add(cc_3)
-    cc_4 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2504, 8))
+    cc_4 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2504, 8))
     counters.add(cc_4)
-    cc_5 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2505, 8))
+    cc_5 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2505, 8))
     counters.add(cc_5)
-    cc_6 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2507, 8))
+    cc_6 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2507, 8))
     counters.add(cc_6)
-    cc_7 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2508, 8))
+    cc_7 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2508, 8))
     counters.add(cc_7)
-    cc_8 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2510, 8))
+    cc_8 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2510, 8))
     counters.add(cc_8)
-    cc_9 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2512, 8))
+    cc_9 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2512, 8))
     counters.add(cc_9)
-    cc_10 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2513, 8))
+    cc_10 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2513, 8))
     counters.add(cc_10)
-    cc_11 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2514, 8))
+    cc_11 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2514, 8))
     counters.add(cc_11)
-    cc_12 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2515, 8))
+    cc_12 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2515, 8))
     counters.add(cc_12)
     states = []
     final_update = None
@@ -28955,7 +28955,7 @@ def _BuildAutomaton_186 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2575, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2575, 8))
     counters.add(cc_0)
     states = []
     final_update = set()
@@ -28986,11 +28986,11 @@ def _BuildAutomaton_187 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2601, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2601, 8))
     counters.add(cc_0)
-    cc_1 = fac.CounterCondition(min=0L, max=1L, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2602, 8))
+    cc_1 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2602, 8))
     counters.add(cc_1)
-    cc_2 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2603, 8))
+    cc_2 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2603, 8))
     counters.add(cc_2)
     states = []
     final_update = set()
@@ -29041,7 +29041,7 @@ def _BuildAutomaton_188 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2636, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2636, 8))
     counters.add(cc_0)
     states = []
     final_update = set()
@@ -29070,7 +29070,7 @@ def _BuildAutomaton_189 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2647, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2647, 8))
     counters.add(cc_0)
     states = []
     final_update = None
@@ -29106,7 +29106,7 @@ def _BuildAutomaton_190 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2663, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2663, 8))
     counters.add(cc_0)
     states = []
     final_update = set()
@@ -29133,7 +29133,7 @@ def _BuildAutomaton_191 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2684, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2684, 8))
     counters.add(cc_0)
     states = []
     final_update = set()
@@ -29164,7 +29164,7 @@ def _BuildAutomaton_192 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2695, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2695, 8))
     counters.add(cc_0)
     states = []
     final_update = None
@@ -29212,9 +29212,9 @@ def _BuildAutomaton_193 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2707, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2707, 8))
     counters.add(cc_0)
-    cc_1 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2708, 8))
+    cc_1 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2708, 8))
     counters.add(cc_1)
     states = []
     final_update = set()
@@ -29252,7 +29252,7 @@ def _BuildAutomaton_194 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2718, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2718, 8))
     counters.add(cc_0)
     states = []
     final_update = set()
@@ -29283,11 +29283,11 @@ def _BuildAutomaton_195 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2769, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2769, 8))
     counters.add(cc_0)
-    cc_1 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2771, 10))
+    cc_1 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2771, 10))
     counters.add(cc_1)
-    cc_2 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2772, 10))
+    cc_2 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2772, 10))
     counters.add(cc_2)
     states = []
     final_update = set()
@@ -29338,7 +29338,7 @@ def _BuildAutomaton_196 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2821, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2821, 8))
     counters.add(cc_0)
     states = []
     final_update = set()
@@ -29365,7 +29365,7 @@ def _BuildAutomaton_197 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2839, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2839, 8))
     counters.add(cc_0)
     states = []
     final_update = set()
@@ -29410,11 +29410,11 @@ def _BuildAutomaton_198 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2866, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2866, 8))
     counters.add(cc_0)
-    cc_1 = fac.CounterCondition(min=0L, max=1L, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2867, 8))
+    cc_1 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2867, 8))
     counters.add(cc_1)
-    cc_2 = fac.CounterCondition(min=0L, max=1L, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2868, 10))
+    cc_2 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2868, 10))
     counters.add(cc_2)
     states = []
     final_update = set()
@@ -29687,7 +29687,7 @@ def _BuildAutomaton_199 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2977, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 2977, 8))
     counters.add(cc_0)
     states = []
     final_update = None
@@ -29745,21 +29745,21 @@ def _BuildAutomaton_200 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 3025, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 3025, 8))
     counters.add(cc_0)
-    cc_1 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 3027, 8))
+    cc_1 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 3027, 8))
     counters.add(cc_1)
-    cc_2 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 3028, 8))
+    cc_2 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 3028, 8))
     counters.add(cc_2)
-    cc_3 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 3029, 8))
+    cc_3 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 3029, 8))
     counters.add(cc_3)
-    cc_4 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 3030, 8))
+    cc_4 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 3030, 8))
     counters.add(cc_4)
-    cc_5 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 3031, 8))
+    cc_5 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 3031, 8))
     counters.add(cc_5)
-    cc_6 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 3033, 8))
+    cc_6 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 3033, 8))
     counters.add(cc_6)
-    cc_7 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 3034, 8))
+    cc_7 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 3034, 8))
     counters.add(cc_7)
     states = []
     final_update = None
@@ -29909,9 +29909,9 @@ def _BuildAutomaton_201 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 3046, 8))
+    cc_0 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 3046, 8))
     counters.add(cc_0)
-    cc_1 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 3047, 8))
+    cc_1 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 3047, 8))
     counters.add(cc_1)
     states = []
     final_update = set()
@@ -29959,7 +29959,7 @@ def _BuildAutomaton_202 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 3095, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 3095, 8))
     counters.add(cc_0)
     states = []
     final_update = set()
@@ -29986,7 +29986,7 @@ def _BuildAutomaton_203 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 3104, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 3104, 8))
     counters.add(cc_0)
     states = []
     final_update = set()
@@ -30013,7 +30013,7 @@ def _BuildAutomaton_204 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 3113, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 3113, 8))
     counters.add(cc_0)
     states = []
     final_update = set()
@@ -30040,7 +30040,7 @@ def _BuildAutomaton_205 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 3121, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 3121, 8))
     counters.add(cc_0)
     states = []
     final_update = set()
@@ -30071,7 +30071,7 @@ def _BuildAutomaton_206 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 3138, 6))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 3138, 6))
     counters.add(cc_0)
     states = []
     final_update = None
@@ -30121,7 +30121,7 @@ def _BuildAutomaton_207 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 3149, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 3149, 8))
     counters.add(cc_0)
     states = []
     final_update = None
@@ -30167,7 +30167,7 @@ def _BuildAutomaton_208 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 3162, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 3162, 8))
     counters.add(cc_0)
     states = []
     final_update = set()
@@ -30214,23 +30214,23 @@ def _BuildAutomaton_209 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 3172, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 3172, 8))
     counters.add(cc_0)
-    cc_1 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 3174, 8))
+    cc_1 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 3174, 8))
     counters.add(cc_1)
-    cc_2 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 3175, 8))
+    cc_2 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 3175, 8))
     counters.add(cc_2)
-    cc_3 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 3176, 8))
+    cc_3 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 3176, 8))
     counters.add(cc_3)
-    cc_4 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 3177, 8))
+    cc_4 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 3177, 8))
     counters.add(cc_4)
-    cc_5 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 3178, 8))
+    cc_5 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 3178, 8))
     counters.add(cc_5)
-    cc_6 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 3181, 8))
+    cc_6 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 3181, 8))
     counters.add(cc_6)
-    cc_7 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 3182, 8))
+    cc_7 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 3182, 8))
     counters.add(cc_7)
-    cc_8 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 3183, 8))
+    cc_8 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 3183, 8))
     counters.add(cc_8)
     states = []
     final_update = None
@@ -30403,7 +30403,7 @@ def _BuildAutomaton_210 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 3209, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 3209, 8))
     counters.add(cc_0)
     states = []
     final_update = None
@@ -30441,7 +30441,7 @@ def _BuildAutomaton_211 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 3262, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 3262, 8))
     counters.add(cc_0)
     states = []
     final_update = None
@@ -30477,7 +30477,7 @@ def _BuildAutomaton_212 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 3271, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 3271, 8))
     counters.add(cc_0)
     states = []
     final_update = None
@@ -30513,7 +30513,7 @@ def _BuildAutomaton_213 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 3283, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 3283, 8))
     counters.add(cc_0)
     states = []
     final_update = set()
@@ -30542,7 +30542,7 @@ def _BuildAutomaton_214 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 3292, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 3292, 8))
     counters.add(cc_0)
     states = []
     final_update = None
@@ -30592,21 +30592,21 @@ def _BuildAutomaton_215 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 3301, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 3301, 8))
     counters.add(cc_0)
-    cc_1 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 3303, 8))
+    cc_1 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 3303, 8))
     counters.add(cc_1)
-    cc_2 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 3304, 8))
+    cc_2 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 3304, 8))
     counters.add(cc_2)
-    cc_3 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 3305, 8))
+    cc_3 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 3305, 8))
     counters.add(cc_3)
-    cc_4 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 3306, 8))
+    cc_4 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 3306, 8))
     counters.add(cc_4)
-    cc_5 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 3307, 8))
+    cc_5 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 3307, 8))
     counters.add(cc_5)
-    cc_6 = fac.CounterCondition(min=0L, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 3309, 8))
+    cc_6 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 3309, 8))
     counters.add(cc_6)
-    cc_7 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 3310, 8))
+    cc_7 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 3310, 8))
     counters.add(cc_7)
     states = []
     final_update = None
@@ -30754,7 +30754,7 @@ def _BuildAutomaton_216 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 3351, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 3351, 8))
     counters.add(cc_0)
     states = []
     final_update = None
@@ -30800,7 +30800,7 @@ def _BuildAutomaton_217 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0L, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 3362, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/Users/pjayaram/Downloads/pmml-4-1.xsd', 3362, 8))
     counters.add(cc_0)
     states = []
     final_update = None

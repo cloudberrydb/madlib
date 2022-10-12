@@ -273,8 +273,8 @@ def mlogregr_train(schema_madlib, source_table, output_table, dependent_varname,
                                             AND NOT {schema_madlib}.array_contains_null({independent_varname})
 
                                     """.format(**all_arguments))[0]
-    num_categories, max_category, min_category = map(
-        int, [non_null_results[i] for i in ('cnt', 'max_cat', 'min_cat')])
+    num_categories, max_category, min_category = list(map(
+        int, [non_null_results[i] for i in ('cnt', 'max_cat', 'min_cat')]))
 
     _assert(max_category == num_categories - 1 and min_category == 0,
             "Mlogregr error: Value of the dependent variable should be "

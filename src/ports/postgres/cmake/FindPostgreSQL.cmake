@@ -134,7 +134,8 @@ if(${PKG_NAME}_PG_CONFIG AND ${PKG_NAME}_SERVER_INCLUDE_DIR)
             math(EXPR ${PKG_NAME}_VERSION_MAJOR "${${PKG_NAME}_VERSION_NUM} / 10000")
             math(EXPR ${PKG_NAME}_VERSION_MINOR "(${${PKG_NAME}_VERSION_NUM} % 10000) / 100")
             math(EXPR ${PKG_NAME}_VERSION_PATCH "${${PKG_NAME}_VERSION_NUM} % 100")
-            set(${PKG_NAME}_VERSION_STRING "${${PKG_NAME}_VERSION_MAJOR}.${${PKG_NAME}_VERSION_MINOR}.${${PKG_NAME}_VERSION_PATCH}")
+            # cbdb only set major version
+            set(${PKG_NAME}_VERSION_STRING "${${PKG_NAME}_VERSION_MAJOR}")
         else(${PKG_NAME}_VERSION_NUM MATCHES "^[0-9]+$")
             # Macro with version number was not found. We use the version string
             # macro as a fallback. Example when this is used: Greenplum < 4.1
@@ -209,6 +210,7 @@ if(${PKG_NAME}_PG_CONFIG AND ${PKG_NAME}_SERVER_INCLUDE_DIR)
 	  endif(${PACKAGE_FIND_VERSION})
     endif(_PACKAGE_NAME STREQUAL "${_NEEDED_PG_CONFIG_PACKAGE_NAME}")
 endif(${PKG_NAME}_PG_CONFIG AND ${PKG_NAME}_SERVER_INCLUDE_DIR)
+
 
 # Checks 'REQUIRED', 'QUIET' and versions. Note that the first parameter is
 # passed in original casing.

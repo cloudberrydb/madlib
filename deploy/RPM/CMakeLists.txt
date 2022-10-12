@@ -11,7 +11,12 @@ rh_version(RH_VERSION)
 
 # -- Set RPM-specific variables ------------------------------------------------
 
-set(CPACK_RPM_PACKAGE_ARCHITECTURE x86_64 PARENT_SCOPE)
+if(NOT DEFINED ENV{ARCH})
+    message(STATUS "not defined environment variable:ARCH")
+    set(CPACK_RPM_PACKAGE_ARCHITECTURE x86_64 PARENT_SCOPE)
+else()
+    set(CPACK_RPM_PACKAGE_ARCHITECTURE $ENV{ARCH} PARENT_SCOPE)
+endif()
 set(CPACK_RPM_PACKAGE_LICENSE "ASL 2.0" PARENT_SCOPE)
 set(CPACK_RPM_PACKAGE_GROUP "Development/Libraries" PARENT_SCOPE)
 set(CPACK_PACKAGING_INSTALL_PREFIX "/usr/local/madlib/Versions/${MADLIB_VERSION_STRING}" PARENT_SCOPE)

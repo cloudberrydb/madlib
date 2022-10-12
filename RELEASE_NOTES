@@ -778,7 +778,7 @@ currently only supports dummy encoding.
 - Added new functionality to export linear and logistic regression models as a
 PMML object. The new module relies on PyXB to create PMML elements.
 - Added a function ('array_scalar_add') to 'add' a scalar to an array.
-- Added 'numeric' type support for all functions that take 'anyarray' as
+- Added 'numeric' type support for all functions that take 'anycompatiblearray' as
 argument.
 - Made usability and aesthetic enhancements to documentation.
 

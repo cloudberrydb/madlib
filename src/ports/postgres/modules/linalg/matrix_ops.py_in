@@ -505,7 +505,7 @@ def matrix_sparsify(schema_madlib, matrix_in, in_args, matrix_out, out_args):
                 {matrix_in}
         ) t1
         WHERE
-            {temp_val} <> 0
+            {temp_val} != 0
         m4_ifdef(`__POSTGRESQL__', `',
             `DISTRIBUTED BY ({out_args[row]})')
         """.format(**locals()))
@@ -526,7 +526,7 @@ def matrix_densify(schema_madlib, matrix_in, in_args, matrix_out, out_args):
                                  in_default_args={'row': in_args['row'],
                                                   'val': in_args['val']})
     (row_dim, col_dim) = get_dims(matrix_in, in_args)
-    _assert(col_dim < sys.maxint,
+    _assert(col_dim < sys.maxsize,
             "Matrix error: Matrix {0} has too many rows. This cannot be "
             "transposed in a dense format due to "
             "restrictions on maximum array size.".format(matrix_in))
@@ -909,7 +909,7 @@ def matrix_block_trans(schema_madlib, matrix_in, in_args, matrix_out, out_args):
 def matrix_blockize(schema_madlib, matrix_in, in_args,
                     row_dim, col_dim, matrix_out, out_args):
     _assert(row_dim > 0 and col_dim > 0, 'Matrix error: invalid block dimension')
-    _assert(row_dim * col_dim < sys.maxint,
+    _assert(row_dim * col_dim < sys.maxsize,
             "Matrix error: Block size requested ({0}) is "
             "too large".format(row_dim * col_dim))
     _validate_input_table(matrix_in)
@@ -1346,7 +1346,7 @@ def _matrix_row_extremum_dense(schema_madlib, matrix_in, in_args, matrix_out, fe
             FROM
                 {matrix_in}) m
         WHERE
-            value_index[2] <> 0
+            value_index[2] != 0
         m4_ifdef(`__POSTGRESQL__', `',
             `DISTRIBUTED BY ({extremum_name})')
         """.format(**locals()))
@@ -1599,7 +1599,7 @@ def _matrix_trans_sparse(schema_madlib, matrix_in, in_args,
 def _matrix_trans_dense(schema_madlib, matrix_in, in_args,
                         matrix_out, out_args):
     (row_dim, col_dim) = get_dims(matrix_in, in_args)
-    _assert(row_dim < sys.maxint,
+    _assert(row_dim < sys.maxsize,
             "Matrix error: Matrix {0} has too many rows. "
             "This cannot be transposed in a dense format due to "
             "restrictions on maximum array size.".format(matrix_in))
@@ -1944,7 +1944,7 @@ def _matrix_scalar_mult_sparse_to_sparse(matrix_in, in_args, scalar, matrix_out,
         FROM
             {matrix_in}
         WHERE
-            {in_args[val]} <> 0
+            {in_args[val]} != 0
         """.format(**locals()), ["FLOAT8"])
     plpy.execute(plan, [scalar])
 
@@ -2943,7 +2943,7 @@ def _matrix_diag_sparse(schema_madlib, diag_elements, matrix_out, out_args):
                 unnest($1) as val,
                 generate_series(1, {matrix_dim}) as num
             ) l1
-        WHERE val <> 0.0 or num = {matrix_dim}
+        WHERE val != 0.0 or num = {matrix_dim}
         """.format(**locals()), ["FLOAT8[]"])
     plpy.execute(plan, [diag_elements])
 

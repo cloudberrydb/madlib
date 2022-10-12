@@ -50,7 +50,7 @@
 ## 1) docker run -d -it --name gpdb -v (path-to-madlib)/src:/madlib/src gpdb bash
 #
 ### When the container is up, connect to it and execute (Install MADlib):
-## 2) docker exec -it gpdb /madlib/build/src/bin/madpack -p greenplum -c gpadmin@127.0.0.1:5432/gpadmin install
+## 2) docker exec -it gpdb /madlib/build/src/bin/madpack -p cloudberry -c gpadmin@127.0.0.1:5432/gpadmin install
 #
 ### Go into the container to build and run commands like install-check for modules:
 ## 3) docker exec -it gpdb sh

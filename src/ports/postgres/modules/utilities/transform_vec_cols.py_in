@@ -16,23 +16,23 @@
 # under the License.
 
 import plpy
-from control import MinWarning
+from .control import MinWarning
 from internal.db_utils import is_col_1d_array
 from internal.db_utils import quote_literal
-from utilities import _assert
-from utilities import add_postfix
-from utilities import ANY_ARRAY
-from utilities import is_valid_psql_type
-from utilities import py_list_to_sql_string
-from utilities import split_quoted_delimited_str
-from validate_args import is_var_valid
-from validate_args import explicit_bool_to_text
-from validate_args import get_cols
-from validate_args import get_cols_and_types
-from validate_args import get_expr_type
-from validate_args import input_tbl_valid
-from validate_args import output_tbl_valid
-from validate_args import table_exists
+from .utilities import _assert
+from .utilities import add_postfix
+from .utilities import ANY_ARRAY
+from .utilities import is_valid_psql_type
+from .utilities import py_list_to_sql_string
+from .utilities import split_quoted_delimited_str
+from .validate_args import is_var_valid
+from .validate_args import explicit_bool_to_text
+from .validate_args import get_cols
+from .validate_args import get_cols_and_types
+from .validate_args import get_expr_type
+from .validate_args import input_tbl_valid
+from .validate_args import output_tbl_valid
+from .validate_args import table_exists
 
 class vec_cols_helper:
     def __init__(self):
@@ -351,7 +351,7 @@ class cols2vec:
         cols_to_keep = ', '.join(self.get_cols_helper.get_cols_as_list(cols_to_output,
                        source_table))+", " if cols_to_output else ''
 
-        feature_list_str = "ARRAY[ {val} ]".format(val=','.join(map(str, self.features_to_nest)))
+        feature_list_str = "ARRAY[ {val} ]".format(val=','.join(list(map(str, self.features_to_nest))))
         plpy.execute("""
                 CREATE TABLE {output_table} AS
                     SELECT {cols_to_keep}

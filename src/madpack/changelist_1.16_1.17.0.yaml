@@ -120,8 +120,8 @@ udf:
 # Overloaded functions should be mentioned separately
 uda:
     - agg_array_concat:
-        rettype: anyarray
-        argument: anyarray
+        rettype: anycompatiblearray
+        argument: anycompatiblearray
     - fit_step:
         rettype: bytea
         argument: smallint[], real[], text, text, text, integer, integer[], integer[], integer, integer, bytea

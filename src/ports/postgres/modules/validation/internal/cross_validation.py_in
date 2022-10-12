@@ -78,7 +78,7 @@ class ValidationResult(object):
     def _get_leafs(self, sub_args):
         def _run(sub_args):
             a = []
-            for k, v in sub_args.iteritems():
+            for k, v in sub_args.items():
                 if isinstance(v, dict):
                     a.extend(_run(v))
                 else:
@@ -141,7 +141,7 @@ class ValidationResult(object):
             return
         header = (self._cv_history[0]['sub_args'].keys() +
                   ['mean_score', 'std_dev_score'])
-        header_str = ','.join(map(str, header))
+        header_str = ','.join(list(map(str, header)))
 
         data = []
         for h in self._flatten():
@@ -164,20 +164,20 @@ class _ValidationArgs(object):
     @classmethod
     def grid(cls, sub_args):
         def combine_dict(dicts):
-            # same as dict((k, v) for d in dicts for k, v in d.iteritems())
-            return dict(chain.from_iterable(d.iteritems() for d in dicts))
+            # same as dict((k, v) for d in dicts for k, v in d.items())
+            return dict(chain.from_iterable(d.items() for d in dicts))
 
         def make_dicts(k, vs):
             return [dict([t]) for t in zip(repeat(k), vs)]
 
         a = []
-        for k, v in sub_args.iteritems():
+        for k, v in sub_args.items():
             if isinstance(v, list):
                 a.append(make_dicts(k, v))
             elif isinstance(v, dict):
                 a.append(make_dicts(k, cls.grid(v)))
         tuples = product(*a)
-        return map(combine_dict, tuples)
+        return list(map(combine_dict, tuples))
 
     def make_from(self, **kwargs):
         def _update_dict(d1, d2):
@@ -185,7 +185,7 @@ class _ValidationArgs(object):
                 raise TypeError("{0} is not dict".format(type(d1)))
             if not isinstance(d2, dict):
                 raise TypeError("{0} is not dict".format(type(d2)))
-            for k, v in d2.iteritems():
+            for k, v in d2.items():
                 if (isinstance(v, dict) and
                         k in d1 and
                         isinstance(d1[k], dict)):
@@ -374,7 +374,7 @@ class CrossValidator(object):
                   SELECT count(*)::float8 AS miss
                   FROM {pred} JOIN {orig}
                   ON {pred}.{id} = {orig}.{id}
-                  WHERE prediction <> {target}) s,
+                  WHERE prediction != {target}) s,
                 (
                   SELECT count(*)::float8 AS total
                   FROM {orig}) r;

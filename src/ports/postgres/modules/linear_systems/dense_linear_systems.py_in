@@ -116,7 +116,7 @@ def _internal_py_array_to_sql_string(array):
 
     @return output SQL array usable in a query
     """
-    return "ARRAY[%s]" % ','.join(map(str, array))
+    return "ARRAY[%s]" % ','.join(list(map(str, array)))
 
 
 # Help function for dense linear solvers

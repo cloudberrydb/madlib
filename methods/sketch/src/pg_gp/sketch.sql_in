@@ -384,8 +384,8 @@ AS 'MODULE_PATHNAME'
 LANGUAGE C STRICT
 m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `NO SQL', `');
 
-DROP FUNCTION IF EXISTS MADLIB_SCHEMA.__fmsketch_trans(bitmaps bytea, input anyelement) CASCADE;
-CREATE FUNCTION MADLIB_SCHEMA.__fmsketch_trans(bitmaps bytea, input anyelement)
+DROP FUNCTION IF EXISTS MADLIB_SCHEMA.__fmsketch_trans(bitmaps bytea, input anycompatible) CASCADE;
+CREATE FUNCTION MADLIB_SCHEMA.__fmsketch_trans(bitmaps bytea, input anycompatible)
 RETURNS bytea
 AS 'MODULE_PATHNAME'
 LANGUAGE C STRICT
@@ -405,13 +405,13 @@ AS 'MODULE_PATHNAME'
 LANGUAGE C STRICT
 m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `NO SQL', `');
 
-DROP AGGREGATE IF EXISTS MADLIB_SCHEMA.fmsketch_dcount(anyelement);
+DROP AGGREGATE IF EXISTS MADLIB_SCHEMA.fmsketch_dcount(anycompatible);
 
 /**
  * @brief Flajolet-Martin's distinct count estimation
  * @param column name
  */
-CREATE AGGREGATE MADLIB_SCHEMA.fmsketch_dcount(/*+ column */ anyelement)
+CREATE AGGREGATE MADLIB_SCHEMA.fmsketch_dcount(/*+ column */ anycompatible)
 (
     sfunc = MADLIB_SCHEMA.__fmsketch_trans,
     stype = bytea,
@@ -497,7 +497,7 @@ RETURNS int8
 AS $$
     PythonFunctionBodyOnlyNoSchema(`sketch', `countmin')
     return countmin.count(sketches64, val)
-$$ LANGUAGE plpythonu
+$$ LANGUAGE plpython3u
 m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `NO SQL', `');
 
 
@@ -514,7 +514,7 @@ RETURNS int8
 AS $$
     PythonFunctionBodyOnlyNoSchema(`sketch', `countmin')
     return countmin.rangecount(sketches64, bot, top)
-$$ LANGUAGE plpythonu
+$$ LANGUAGE plpython3u
 m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `NO SQL', `');
 
 /**
@@ -531,7 +531,7 @@ RETURNS int8
 AS $$
     PythonFunctionBodyOnlyNoSchema(`sketch', `countmin')
     return countmin.centile(sketches64, centile, cnt)
-$$ LANGUAGE plpythonu
+$$ LANGUAGE plpython3u
 m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `NO SQL', `');
 
 /**
@@ -547,7 +547,7 @@ RETURNS int8
 AS $$
     PythonFunctionBodyOnlyNoSchema(`sketch', `countmin')
     return countmin.centile(sketches64, 50, cnt)
-$$ LANGUAGE plpythonu
+$$ LANGUAGE plpython3u
 m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `NO SQL', `');
 
 /**
@@ -560,7 +560,7 @@ AS $$
     PythonFunctionBodyOnlyNoSchema(`sketch', `countmin')
     # schema_madlib comes from PythonFunctionBodyOnly
     return countmin.width_histogram( sketches64, themin, themax, nbuckets)
-$$ LANGUAGE plpythonu
+$$ LANGUAGE plpython3u
 m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `NO SQL', `');
 
 /** @brief <c>cmsketch_depth_histogram</c> is a UDA that takes a cmsketch and a number of buckets n, and produces an n-bucket histogram for the column where each bucket has approximately the same count. The output is a text string containing triples {lo, hi, count} representing the buckets; counts are approximate.  Note that an equi-depth histogram is equivalent to a spanning set of equi-spaced centiles.
@@ -571,13 +571,13 @@ RETURNS text
 AS $$
     PythonFunctionBodyOnlyNoSchema(`sketch', `countmin')
     return countmin.depth_histogram(sketches64, nbuckets)
-$$ LANGUAGE plpythonu
+$$ LANGUAGE plpython3u
 m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `NO SQL', `');
 
 -- MFV Sketch functions
 
-DROP FUNCTION IF EXISTS MADLIB_SCHEMA.__mfvsketch_trans(bytea, anyelement, int4) CASCADE;
-CREATE FUNCTION MADLIB_SCHEMA.__mfvsketch_trans(bytea, anyelement, int4)
+DROP FUNCTION IF EXISTS MADLIB_SCHEMA.__mfvsketch_trans(bytea, anycompatible, int4) CASCADE;
+CREATE FUNCTION MADLIB_SCHEMA.__mfvsketch_trans(bytea, anycompatible, int4)
 RETURNS bytea
 AS 'MODULE_PATHNAME'
 LANGUAGE C STRICT
@@ -609,14 +609,14 @@ CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.__sketch_array_set_bit_in_place(bytea, 
 RETURNS bytea AS 'MODULE_PATHNAME', 'sketch_array_set_bit_in_place' LANGUAGE C STRICT
 m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `NO SQL', `');
 
-DROP AGGREGATE IF EXISTS MADLIB_SCHEMA.mfvsketch_top_histogram( anyelement, int4);
+DROP AGGREGATE IF EXISTS MADLIB_SCHEMA.mfvsketch_top_histogram( anycompatible, int4);
 /**
  * @brief Produces an n-bucket histogram for a column where each bucket counts
  * one of the most frequent values in the column. The output is an array of
  * doubles {value, count} in descending order of frequency; counts are
  * approximated via CountMin sketches. Ties are handled arbitrarily.
 */
-CREATE AGGREGATE MADLIB_SCHEMA.mfvsketch_top_histogram(/*+ column */ anyelement, /*+ number_of_buckets */ int4)
+CREATE AGGREGATE MADLIB_SCHEMA.mfvsketch_top_histogram(/*+ column */ anycompatible, /*+ number_of_buckets */ int4)
 (
     sfunc = MADLIB_SCHEMA.__mfvsketch_trans,
     stype = bytea,
@@ -624,12 +624,12 @@ CREATE AGGREGATE MADLIB_SCHEMA.mfvsketch_top_histogram(/*+ column */ anyelement,
     initcond = ''
 );
 
-DROP AGGREGATE IF EXISTS MADLIB_SCHEMA.mfvsketch_quick_histogram(anyelement, int4);
+DROP AGGREGATE IF EXISTS MADLIB_SCHEMA.mfvsketch_quick_histogram(anycompatible, int4);
 /**
  * @brief On Postgres it works the same way as \ref mfvsketch_top_histogram but,
  * in Greenplum it does parallel aggregation to provide a "quick and dirty" answer.
 */
-CREATE AGGREGATE MADLIB_SCHEMA.mfvsketch_quick_histogram(/*+ column */ anyelement, /*+ number_of_buckets */ int4)
+CREATE AGGREGATE MADLIB_SCHEMA.mfvsketch_quick_histogram(/*+ column */ anycompatible, /*+ number_of_buckets */ int4)
 (
     sfunc = MADLIB_SCHEMA.__mfvsketch_trans,
     stype = bytea,

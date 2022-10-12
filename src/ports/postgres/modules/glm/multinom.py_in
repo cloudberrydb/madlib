@@ -22,8 +22,8 @@ from utilities.validate_args import output_tbl_valid
 from utilities.validate_args import cols_in_tbl_valid
 from utilities.validate_args import columns_exist_in_table
 
-from glm import __glm_validate_args
-from glm import __extract_optim_params
+from .glm import __glm_validate_args
+from .glm import __extract_optim_params
 
 # ========================================================================
 

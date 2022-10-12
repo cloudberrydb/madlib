@@ -136,8 +136,8 @@ root directory) for more options, after having run `cmake` the first time.
     script will check if `$(command -v pg_config)` points to a
     PostgreSQL/Greenplum installation.
 
-    Note: If no `GREENPLUM<...>_PG_CONFIG` is specified, the build script will
-    look for `/usr/local/greenplum-db/bin/pg_config`.
+    Note: If no `CBDB<...>_PG_CONFIG` is specified, the build script will
+    look for `/usr/local/cloudberry-db/bin/pg_config` or `/usr/local/cloudberry-db-devel/bin/pg_config`.
 
 - `LIBSTDCXX_COMPAT` (default: *empty*)
 

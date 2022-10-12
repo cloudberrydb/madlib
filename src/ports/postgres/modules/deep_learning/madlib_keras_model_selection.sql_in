@@ -852,7 +852,7 @@ CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.load_model_selection_table(
     PythonFunctionBodyOnly(`deep_learning', `madlib_keras_model_selection')
     mst_loader = madlib_keras_model_selection.MstLoader(**globals())
     mst_loader.load()
-$$ LANGUAGE plpythonu VOLATILE
+$$ LANGUAGE plpython3u VOLATILE
 m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `MODIFIES SQL DATA', `');
 
 CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.load_model_selection_table(
@@ -884,7 +884,7 @@ CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.generate_model_configs(
 
     mst_loader = madlib_keras_model_selection.MstSearch(**globals())
     mst_loader.load()
-$$ LANGUAGE plpythonu VOLATILE
+$$ LANGUAGE plpython3u VOLATILE
 m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `MODIFIES SQL DATA', `');
 
 /*
@@ -904,5 +904,5 @@ CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.generate_model_configs(
     PythonFunctionBodyOnly(`deep_learning', `madlib_keras_model_selection')
     mst_loader = madlib_keras_model_selection.MstSearch(**globals())
     mst_loader.load()
-$$ LANGUAGE plpythonu VOLATILE
+$$ LANGUAGE plpython3u VOLATILE
 m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `MODIFIES SQL DATA', `');
