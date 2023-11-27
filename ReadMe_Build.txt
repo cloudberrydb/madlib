@@ -38,6 +38,7 @@ Optional:
   below):
   + PostgreSQL 9.2, 9.3, 9.4
   + Greenplum 4.2, 4.3
+  + Cloudberry Database 1.0+
   + All requirements for generating user-level documentation (see above)
 
 ** Build-time Debian package dependencies (optional read):

@@ -1,10 +1,11 @@
-![](doc/imgs/magnetic-icon.png?raw=True) ![](doc/imgs/agile-icon.png?raw=True) ![](doc/imgs/deep-icon.png?raw=True)
-=================================================
+# MADlib for CloudberryDB
+
+> [!Note]
+> This repo is forked MADlib for CloudberryDB.
+
 **MADlib<sup>&reg;</sup>** is an open-source library for scalable in-database analytics.
 It provides data-parallel implementations of mathematical, statistical and
 machine learning methods for structured and unstructured data.
-
-[![Build Status](https://ci-builds.apache.org/job/Madlib/job/madlib-build/job/master/badge/icon)](https://ci-builds.apache.org/job/Madlib/job/madlib-build/job/master/)
 
 Installation and Contribution
 ==============================
